@@ -1,0 +1,27 @@
+<div class="row justify-content-center">
+  <div class="col-md-8 col-lg-6">
+    <div class="card mx-4">
+      <div class="card-body p-4">
+        <h1>
+          <%= t(".title") %>
+        </h1>
+
+        <%= form_with(model: resource, as: resource_name, url: password_path(resource_name), local: true) do |f| %>
+          <div class="form-group">
+            <%= f.label :email %>
+            <%= f.email_field :email, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email), id: "user_email", autofocus: true, required: "required", class: "form-control", class_for_error: "is-invalid" %>
+            <%= f.error_message :email, class: "invalid-feedback" %>
+          </div>
+
+          <%= f.submit t(".submit"), class: "btn btn-block btn-primary" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- if devise_mapping.database_authenticatable? %>
+  <div class="block text-center">
+    <%= link_to t(".back_to_sign_in_instructions"), new_session_path(resource_name) %>
+  </div>
+<% end %>

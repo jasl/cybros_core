@@ -1,0 +1,38 @@
+# Set default behaviour, in case users don't have core.autocrlf set.
+* text=auto
+
+# Custom for Visual Studio, very unlikely, but lets keep it
+*.cs     diff=csharp
+*.sln    merge=union
+*.csproj merge=union
+*.vbproj merge=union
+*.fsproj merge=union
+*.dbproj merge=union
+
+# Standard to msysgit
+*.doc  diff=astextplain
+*.DOC  diff=astextplain
+*.docx diff=astextplain
+*.DOCX diff=astextplain
+*.dot  diff=astextplain
+*.DOT  diff=astextplain
+*.pdf  diff=astextplain
+*.PDF  diff=astextplain
+*.rtf  diff=astextplain
+*.RTF  diff=astextplain
+
+# Enforce Unix newlines
+*.css   text eol=lf
+*.html  text eol=lf
+*.erb   text eol=lf
+*.js    text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+*.py    text eol=lf
+*.rb    text eol=lf
+*.scss  text eol=lf
+*.svg   text eol=lf
+*.yml   text eol=lf
+
+# Don't diff or textually merge source maps
+*.map   binary

@@ -1,0 +1,11 @@
+zh-CN:
+  accounts:
+    profiles:
+      show:
+        title: "编辑个人资料"
+        submit: "提交"
+        updated: "个人资料更新成功"
+        section:
+          email:
+            title: "邮箱"
+            description: "这些信息会影响到下一次登录，并且不能和其他用户的重复"

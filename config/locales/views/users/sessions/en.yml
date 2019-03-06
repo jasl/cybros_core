@@ -1,0 +1,10 @@
+en:
+  users:
+    sessions:
+      new:
+        title: "Sign in"
+        submit: "Sign in"
+        forgot_your_password: "Forgot your password?"
+        new_user_instructions: "New user?"
+        sign_up: "Sign up"
+        didn_t_receive_confirmation_instructions: "Didn't received confirmation email?"

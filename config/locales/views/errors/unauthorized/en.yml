@@ -1,0 +1,6 @@
+en:
+  errors:
+    unauthorized:
+      code: '401'
+      title: 'No authority'
+      content: 'You have no permission for this page.'

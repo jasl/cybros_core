@@ -1,0 +1,9 @@
+en:
+  users:
+    registrations:
+      new:
+        title: "Sign Up"
+        submit: "Sign up"
+        sign_in: "Sign in"
+        signed_up_user_instructions: "Already signed up?"
+        didn_t_receive_confirmation_instructions: "Didn't received confirmation email?"

@@ -1,0 +1,6 @@
+zh-CN:
+  errors:
+    unauthorized:
+      code: '401'
+      title: '禁止访问'
+      content: '你没有权限访问这个页面。'

@@ -1,0 +1,46 @@
+zh-CN:
+  admin:
+    users:
+      shared:
+        status:
+          admin: "管理员"
+          pending_confirmation: "未验证邮箱"
+          pending_reconfirmation: "未验证新邮箱"
+          inviting: "待接受邀请"
+          locked: "已禁用"
+        notice:
+          locked: "用户已被禁用"
+          unlocked: "用户已恢复使用"
+          updated: "用户更新成功"
+          created: "用户创建成功"
+          sent_confirmation_mail: "激活邮件已发送"
+          sent_invitation_mail: "邀请邮件已发送"
+        confirmation:
+          lock: "确定要禁用该用户吗？"
+          unlock: "确定要恢复该用户吗？"
+      index:
+        title: "用户管理"
+        actions:
+          new: "新建用户"
+        table:
+          id: "Id"
+          email: "邮箱"
+          created_at: "创建于"
+          current_sign_in_at: "最后登录"
+          status: "状态"
+          actions:
+            show: "查看"
+      show:
+        actions:
+          lock: "禁用"
+          unlock: "启用"
+          resend_confirmation_mail: "重发激活邮件"
+          resend_invitation_mail: "重发邀请邮件"
+        email: "邮箱"
+        created_at: "创建于"
+        current_sign_in_at: "最后登录"
+        status: "状态"
+      new:
+        title: "新建用户"
+      edit:
+        title: "编辑用户"

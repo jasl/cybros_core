@@ -1,0 +1,7 @@
+en:
+  users:
+    confirmations:
+      new:
+        title: "Resend Confirmation Email"
+        submit: "Resend Confirmation Email"
+        back_to_sign_in_instructions: "Back to sign in"

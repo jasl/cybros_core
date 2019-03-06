@@ -1,0 +1,7 @@
+<div class="block text-center">
+  <% if stored_location? %>
+    <%= link_to t(".back"), stored_location %>
+  <% else %>
+    <%= link_to t(".back_to_home"), root_path %>
+  <% end %>
+</div>

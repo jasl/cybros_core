@@ -1,0 +1,7 @@
+zh-CN:
+  users:
+    confirmations:
+      new:
+        title: "重新发送确认邮件"
+        submit: "重新发送确认邮件"
+        back_to_sign_in_instructions: "返回到登录"

@@ -1,0 +1,12 @@
+en:
+  users:
+    passwords:
+      edit:
+        title: "Update Password"
+        submit: "Update my password"
+        confirm_new_password: "Confirm new password"
+        new_password: "New password"
+      new:
+        title: "Forget Password"
+        submit: "Resend Reset Email"
+        back_to_sign_in_instructions: "Back to sign in"

@@ -1,0 +1,8 @@
+zh-CN:
+  users:
+    invitations:
+      edit:
+        title: "接受邀请"
+        submit: "提交"
+        confirm_password: "确认密码"
+        password: "密码"

@@ -1,0 +1,6 @@
+zh-CN:
+  errors:
+    not_found:
+      code: '404'
+      title: '找不到页面'
+      content: '该页面可能已经失效。'

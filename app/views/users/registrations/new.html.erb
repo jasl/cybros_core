@@ -1,0 +1,46 @@
+<div class="row justify-content-center">
+  <div class="col-md-8 col-lg-6">
+    <div class="card mx-4">
+      <div class="card-body p-4">
+        <h1>
+          <%= t(".title") %>
+        </h1>
+
+        <%= form_with(model: resource, as: resource_name, url: registration_path(resource_name), local: true) do |f| %>
+          <div class="form-group">
+            <%= f.label :email %>
+            <%= f.email_field :email, id: "user_email", autofocus: true, required: "required", class: "form-control", class_for_error: "is-invalid" %>
+            <%= f.error_message :email, class: "invalid-feedback" %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :password %>
+            <%= f.password_field :password, id: "user_password", autocomplete: "off", required: "required", class: "form-control", class_for_error: "is-invalid" %>
+            <%= f.error_message :password, class: "invalid-feedback" %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :password_confirmation %>
+            <%= f.password_field :password_confirmation, id: "user_password_confirmation", autocomplete: "off", required: "required", class: "form-control", class_for_error: "is-invalid" %>
+            <%= f.error_message :password_confirmation, class: "invalid-feedback" %>
+          </div>
+
+          <%= f.submit t(".submit"), class: "btn btn-block btn-primary" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- if devise_mapping.database_authenticatable? %>
+  <div class="block text-center">
+    <%= t(".signed_up_user_instructions") %>
+    <%= link_to t(".sign_in"), new_session_path(resource_name) %>
+  </div>
+<% end %>
+
+<%- if devise_mapping.confirmable? %>
+  <div class="block text-center">
+    <%= link_to t(".didn_t_receive_confirmation_instructions"), new_confirmation_path(resource_name) %>
+  </div>
+<% end -%>

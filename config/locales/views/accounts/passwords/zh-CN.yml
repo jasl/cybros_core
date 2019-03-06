@@ -1,0 +1,12 @@
+zh-CN:
+  accounts:
+    passwords:
+      show:
+        title: "更改密码"
+        description: "这些信息会影响到下一次登录，并且不能和其他用户的重复"
+        updated: "密码更改成功"
+        form:
+          confirm_new_password: "确认新密码"
+          new_password: "新密码"
+          current_password: "当前密码"
+          submit: "更新"

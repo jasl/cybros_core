@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html class="<%= html_class %>" lang="<%= I18n.locale %>">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= display_meta_tags separator: "-", reverse: true %>
+    <%#= render "layouts/favicon" %>
+
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <%= yield :head %>
+  </head>
+
+  <body class="<%= body_class %>">
+    <%= content_for?(:content) ? yield(:content) : yield %>
+    <%= yield :body %>
+  </body>
+</html>

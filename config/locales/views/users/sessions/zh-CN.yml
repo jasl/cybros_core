@@ -1,0 +1,10 @@
+zh-CN:
+  users:
+    sessions:
+      new:
+        title: "登录"
+        submit: "登录"
+        forgot_your_password: "忘记密码？"
+        new_user_instructions: "新人？"
+        sign_up: "注册一个账号"
+        didn_t_receive_confirmation_instructions: "没有收到确认邮件？"

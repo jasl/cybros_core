@@ -1,0 +1,27 @@
+default: &default
+  perform_caching: false
+  raise_delivery_errors: false
+  perform_deliveries: true
+  delivery_method: :smtp
+  deliver_later_queue_name: 'mailers'
+
+development:
+  <<: *default
+  smtp_settings:
+    # see https://github.com/sj26/mailcatcher
+    address: 127.0.0.1
+    port: 1025
+    domain: localhost
+  default_options:
+    reply_to: admin@cybros.local
+    from: admin@cybros.local
+  default_url_options:
+    host: localhost
+    port: 3000
+
+test:
+  <<: *default
+  delivery_method: :test
+
+production:
+  <<: *default

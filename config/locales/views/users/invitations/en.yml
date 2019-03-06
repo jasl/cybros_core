@@ -1,0 +1,8 @@
+en:
+  users:
+    invitations:
+      edit:
+        title: "Accept Invitation"
+        submit: "Submit"
+        confirm_password: "Confirm Password"
+        password: "Password"

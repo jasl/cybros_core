@@ -1,0 +1,25 @@
+<header class="app-header navbar">
+  <% if has_sidebar? %>
+    <button class="navbar-toggler sidebar-toggler d-lg-none" type="button" data-toggle="sidebar-show">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <% end %>
+  <%= link_to root_path, class: "navbar-brand" do %>
+    <%= t("layouts.header.brand") %>
+  <% end %>
+  <ul class="nav navbar-nav ml-auto">
+    <li class="nav-item dropdown">
+      <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        <%= current_user.email %>
+        <i class="fas fa-caret-down"></i>
+      </a>
+      <div class="dropdown-menu dropdown-menu-right">
+        <% if current_user.admin? %>
+          <%= link_to t("layouts.header.account_menu.admin"), admin_root_path, class: "dropdown-item" %>
+        <% end %>
+        <%= link_to t("layouts.header.account_menu.profile"), account_profile_path, class: "dropdown-item" %>
+        <%= link_to t("layouts.header.account_menu.sign_out"), destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+      </div>
+    </li>
+  </ul>
+</header>

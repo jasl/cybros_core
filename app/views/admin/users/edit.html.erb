@@ -1,0 +1,19 @@
+<%- content_for :action_bar do %>
+  <ol>
+    <li class="action_bar-item">
+      <%= link_to t("shared.actions.back"), admin_user_path(@user), class: "btn text-primary" %>
+    </li>
+  </ol>
+<% end %>
+
+<div class="row justify-content-center">
+  <div class="col-lg-12">
+    <div class="container">
+      <h3 class="page-title">
+        <%= t(".title") %>
+      </h3>
+
+      <%= render 'form', user: @user %>
+    </div>
+  </div>
+</div>

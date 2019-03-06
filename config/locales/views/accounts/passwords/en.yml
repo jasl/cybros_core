@@ -1,0 +1,12 @@
+en:
+  accounts:
+    passwords:
+      show:
+        title: "Change Password"
+        description: "After a successful password update, you should use new password on next log in."
+        updated: "Password update successful"
+        form:
+          confirm_new_password: "Confirm new password"
+          new_password: "New password"
+          current_password: "Current password"
+          submit: "Update"

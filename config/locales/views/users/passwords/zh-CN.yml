@@ -1,0 +1,12 @@
+zh-CN:
+  users:
+    passwords:
+      edit:
+        title: "更改密码"
+        submit: "更改我的密码"
+        confirm_new_password: "确认新密码"
+        new_password: "新密码"
+      new:
+        title: "忘记密码"
+        submit: "发送重设密码的邮件"
+        back_to_sign_in_instructions: "回到登录"

@@ -1,0 +1,6 @@
+en:
+  errors:
+    forbidden:
+      code: '403'
+      title: 'Forbidden'
+      content: 'You have no permission for this page.'

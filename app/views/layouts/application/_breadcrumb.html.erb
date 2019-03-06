@@ -1,0 +1,15 @@
+<ol class="breadcrumb">
+  <% breadcrumbs.each do |breadcrumb| %>
+    <li class="breadcrumb-item">
+      <% if breadcrumb[:link].present? %>
+        <%= link_to breadcrumb[:text], breadcrumb[:link] %>
+      <% else %>
+        <%= breadcrumb[:text] %>
+      <% end %>
+    </li>
+  <% end %>
+  <!-- Breadcrumb Menu-->
+  <li class="breadcrumb-menu d-md-down-none">
+    <%= yield :breadcrumb_menu %>
+  </li>
+</ol>

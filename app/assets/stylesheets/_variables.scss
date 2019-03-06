@@ -1,0 +1,214 @@
+@import "~bootstrap/scss/functions";
+
+// Overrides CoreUI & Bootstrap Variables
+
+// Z-index master list
+
+$zindex-nav-tab:                  1000;
+
+//
+// Color system
+//
+
+$white:                           #fff;
+$gray-100:                        #f9f9f9;
+$gray-150:                        #f3f3f3;
+$gray-200:                        #e9ebec;
+$gray-300:                        #dbdee0;
+$gray-400:                        #869fac;
+$gray-500:                        #678898;
+$gray-600:                        #9fabb8;
+$gray-700:                        #3e515b;
+$gray-800:                        #34383c;
+$gray-900:                        #151b1e;
+$black:                           #000;
+
+$blue:                            #36a9e1;
+$light-blue:                      #63c2de;
+$indigo:                          #6610f2;
+$purple:                          #6f42c1;
+$pink:                            #e83e8c;
+$red:                             #ff5454;
+$orange:                          #fabb3d;
+$yellow:                          #ffc107;
+$green:                           #bdea74;
+$teal:                            #20c997;
+$cyan:                            #67c2ef;
+
+$theme-colors: (
+        primary: $blue,
+        alert: $blue,
+        secondary: $gray-300,
+        success: $green,
+        info: $blue,
+        notice: $blue,
+        warning: $yellow,
+        danger: $red,
+        light: $gray-100,
+        dark: $gray-800
+);
+
+$border-radius:                   .25rem;
+$border-color:                    $gray-300;
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-transitions:              true;
+$enable-rounded:                  false;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:                         $white;
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft Yahei", sans-serif !default;
+$font-size-base:                  0.875rem;
+$text-muted:                      $gray-600;
+
+// Main header wrapper
+
+$main-header-margin-bottom:       1.5rem;
+$main-header-padding-y:           .75rem;
+$main-header-padding-x:           2rem;
+
+// Breadcrumbs
+
+$breadcrumb-padding-y:            $main-header-padding-y;
+$breadcrumb-padding-x:            $main-header-padding-x;
+$breadcrumb-bg:                   $gray-100;
+$breadcrumb-margin-bottom:        0;
+$breadcrumb-divider-color:        $gray-600;
+$breadcrumb-active-color:         $gray-600;
+
+// Action bar
+
+$action_bar-borders: (
+  bottom: (
+    size:                         1px,
+    style:                        solid,
+    color:                        $border-color
+  )
+);
+
+$action_bar-padding-y:            $main-header-padding-y;
+$action_bar-padding-x:            $main-header-padding-x;
+$action_bar-item-padding:         .5rem;
+
+$action_bar-bg:                   $gray-100;
+$action_bar-divider-color:        $gray-600;
+$action_bar-divider:              quote("|");
+
+$action_bar-border-radius:        $border-radius;
+
+// Cards
+
+$card-border-color:               $gray-200;
+$card-cap-bg:                     $gray-100;
+
+// Dropdowns
+
+$dropdown-padding-y:              0;
+$dropdown-border-color:           $gray-200;
+$dropdown-divider-bg:             $gray-100;
+
+// Buttons
+
+$btn-secondary-border:            $gray-300;
+
+// Progress bars
+
+$progress-bg:                     $gray-100;
+
+// Tables
+
+$table-bg-accent:                 $gray-100;
+$table-bg-hover:                  $gray-100;
+
+// Forms
+
+$input-group-addon-bg:            $gray-100;
+$input-border-color:              $gray-200;
+$input-group-addon-border-color:  $gray-200;
+
+// CoreUI overrides
+
+$border-color:                      $gray-300;
+
+// Navbar
+
+$navbar-height:                     50px;
+$navbar-brand-width:                auto;
+$navbar-padding-y:                  0;
+$navbar-padding-x:                  1.5rem;
+$navbar-bg:                         $gray-800;
+$navbar-border: (
+  bottom: (
+    size:                           1px,
+    style:                          solid,
+    color:                          $gray-800
+  )
+);
+
+$navbar-color:                      $gray-300;
+$navbar-hover-color:                darken($navbar-color, 10%);
+$navbar-active-color:               darken($navbar-color, 20%);
+$navbar-disabled-color:             lighter($navbar-color, 20%);
+
+$navbar-dropdown-margin-top:        20px;
+
+// Sidebar
+
+$sidebar-width:                     220px;
+$sidebar-color:                     $gray-800;
+$sidebar-bg:                        $gray-200;
+$sidebar-borders: (
+  right: (
+    size:                           1px,
+    style:                          solid,
+    color:                          $border-color
+  )
+);
+$sidebar-header-borders: (
+  bottom: (
+    size:                             1px,
+    style:                            solid,
+    color:                            $border-color
+  )
+) !default;
+
+// Sidebar Navigation
+
+$sidebar-nav-color:                 $gray-800;
+$sidebar-nav-title-padding-y:       .95rem;
+$sidebar-nav-title-color:           $text-muted;
+$sidebar-nav-link-color:            $gray-800;
+$sidebar-nav-link-hover-color:      $gray-800;
+$sidebar-nav-link-hover-bg:         darken($gray-300, 5%) !important;
+$sidebar-nav-link-hover-icon-color: $gray-800 !important;
+$sidebar-nav-link-active-color:     $gray-800;
+$sidebar-nav-link-active-bg:        darken($sidebar-bg, 5%);
+$sidebar-nav-link-active-icon-color:$gray-800;
+$sidebar-nav-link-active-box-color: $gray-800;
+
+$sidebar-nav-dropdown-color:        $gray-800;
+$sidebar-nav-dropdown-bg:           darken($sidebar-bg, 3%);
+
+$sidebar-minimizer-bg:              transparent;
+$sidebar-minimizer-borders: (
+  top: (
+    size:                           1px,
+    style:                          solid,
+    color:                          $border-color
+  )
+);
+
+$sidebar-minimizer-hover-bg:        $gray-300;
+
+@import "~@coreui/coreui/scss/variables";

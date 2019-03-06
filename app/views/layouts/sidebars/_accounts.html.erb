@@ -1,0 +1,19 @@
+<div class="sidebar">
+  <nav class="sidebar-nav">
+    <ul class="nav">
+      <%= nav_item controller: 'accounts/profiles', html_options: {class: "nav-item"} do %>
+        <%= link_to account_profile_path, class: "nav-link" do %>
+          <i class="nav-icon fas fa-user-circle"></i>
+          <%= t("layouts.sidebar.accounts.profile") %>
+        <% end %>
+      <% end %>
+      <%= nav_item controller: 'accounts/passwords', html_options: {class: "nav-item"} do %>
+        <%= link_to account_password_path, class: "nav-link" do %>
+          <i class="nav-icon fas fa-lock"></i>
+          <%= t("layouts.sidebar.accounts.password") %>
+        <% end %>
+      <% end %>
+    </ul>
+  </nav>
+  <button class="sidebar-minimizer" type="button"></button>
+</div>

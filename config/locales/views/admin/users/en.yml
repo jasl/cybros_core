@@ -1,0 +1,46 @@
+en:
+  admin:
+    users:
+      shared:
+        status:
+          admin: "Admin"
+          pending_confirmation: "Pending confirmation"
+          pending_reconfirmation: "Pending reconfirmation"
+          inviting: "Inviting"
+          locked: "Locked"
+        notice:
+          locked: "User disabled"
+          unlocked: "User enabled"
+          updated: "User updated"
+          created: "User created"
+          sent_confirmation_mail: "Confirmation mail sent"
+          sent_invitation_mail: "Invitation mail sent"
+        confirmation:
+          lock: "Are you sure lock the user?"
+          unlock: "Are you sure unlock the user?"
+      index:
+        title: "User Management"
+        actions:
+          new: "New User"
+        table:
+          id: "Id"
+          email: "Email"
+          created_at: "Created at"
+          current_sign_in_at: "Current sign in at"
+          status: "Status"
+          actions:
+            show: "Show"
+      show:
+        actions:
+          lock: "Lock"
+          unlock: "Unlock"
+          resend_confirmation_mail: "Resend confirmation mail"
+          resend_invitation_mail: "Resend invitation mail"
+        email: "Email"
+        created_at: "Created at"
+        current_sign_in_at: "Current sign in at"
+        status: "Status"
+      new:
+        title: "New User"
+      edit:
+        title: "Edit User"

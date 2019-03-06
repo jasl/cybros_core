@@ -1,0 +1,17 @@
+zh-CN:
+  shared:
+    actions:
+      back: '返回'
+      show: '查看'
+      edit: '编辑'
+      destroy: '删除'
+      submit: '提交'
+      new: '新建'
+    form:
+      submit:
+        create: "创建"
+        update: "更新"
+        submit: "提交"
+        destroy: "删除"
+    confirmation:
+      destroy: "确定要删除吗？"

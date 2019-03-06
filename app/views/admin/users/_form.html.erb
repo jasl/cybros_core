@@ -1,0 +1,21 @@
+<%= form_with(model: [:admin, user], local: true) do |f| %>
+  <div class="form-group">
+    <%= f.label :email %>
+    <%= f.email_field :email, id: "user_email", autofocus: true, required: "required", class: "form-control", class_for_error: "is-invalid" %>
+    <%= f.error_message :email, class: "invalid-feedback" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :password %>
+    <%= f.password_field :password, id: "user_password", autocomplete: "off", required: !user.persisted?, class: "form-control", class_for_error: "is-invalid" %>
+    <%= f.error_message :password, class: "invalid-feedback" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation, id: "user_password_confirmation", autocomplete: "off", required: !user.persisted?, class: "form-control", class_for_error: "is-invalid" %>
+    <%= f.error_message :password_confirmation, class: "invalid-feedback" %>
+  </div>
+
+  <%= f.submit (user.persisted? ? t("shared.form.submit.update") : t("shared.form.submit.create")), class: "btn btn-block btn-primary" %>
+<% end %>

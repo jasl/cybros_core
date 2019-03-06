@@ -1,0 +1,25 @@
+<%- body_class = "app header-fixed" %>
+<%- body_class << " sidebar-fixed sidebar-lg-show" if has_sidebar? %>
+<%- body_class << " aside-menu-fixed" if has_aside? %>
+<% content_for(:body_class, body_class) %>
+<% content_for :content do %>
+  <%= render "layouts/application/header" %>
+  <div class="app-body">
+    <%= render_sidebar %>
+    <main class="main">
+      <div class="main-header-wrapper">
+        <%= render_breadcrumbs %>
+        <%= render_action_bar %>
+        <%= render "layouts/application/notice" %>
+      </div>
+      <div class="container-fluid" id="main">
+        <%= yield %>
+      </div>
+    </main>
+    <%= render_aside %>
+  </div>
+  <%= render "layouts/application/footer" %>
+<% end %>
+
+<%= render template: "layouts/base" %>
+

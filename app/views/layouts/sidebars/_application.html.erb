@@ -1,0 +1,19 @@
+<div class="sidebar">
+  <div class="sidebar-header">
+    <%= link_to root_path, class: "nav-link" do %>
+      <i class="fas fa-home"></i>
+      <%= t("layouts.sidebar.application.header") %>
+    <% end %>
+  </div>
+  <nav class="sidebar-nav">
+    <ul class="nav">
+      <%= nav_item path: 'home#index', html_options: {class: "nav-item"} do %>
+        <%= link_to root_path, class: "nav-link" do %>
+          <i class="fas fa-tachometer-alt"></i>
+          <%= t("layouts.sidebar.application.home") %>
+        <% end %>
+      <% end %>
+    </ul>
+  </nav>
+  <button class="sidebar-minimizer" type="button"></button>
+</div>

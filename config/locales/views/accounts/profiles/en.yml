@@ -1,0 +1,11 @@
+en:
+  accounts:
+    profiles:
+      show:
+        title: "Edit Profile"
+        submit: "Submit"
+        updated: "Profile update successfully"
+        section:
+          email:
+            title: "Email"
+            description: "After a successful email update, you should use new email on next log in."

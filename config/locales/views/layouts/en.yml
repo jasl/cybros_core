@@ -1,0 +1,19 @@
+en:
+  layouts:
+    header:
+      brand: "Cybros Core"
+      account_menu:
+        admin: "Administration"
+        profile: "Edit Profile"
+        sign_out: "Sign Out"
+    footer:
+      copyright: "© 2019 Jasl, MIT license"
+    sidebar:
+      application:
+        home: "Home"
+      accounts:
+        profile: "Profile"
+        password: "Password"
+      admin:
+        home: "Home"
+        users: "Users"

@@ -1,0 +1,17 @@
+en:
+  shared:
+    actions:
+      back: 'Back'
+      show: 'Show'
+      edit: 'Edit'
+      destroy: 'Delete'
+      submit: 'Submit'
+      new: 'New'
+    form:
+      submit:
+        create: "Create"
+        update: "Update"
+        submit: "Submit"
+        destroy: "Delete"
+    confirmation:
+      destroy: "Do you want to delete?"

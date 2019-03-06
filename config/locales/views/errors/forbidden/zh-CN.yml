@@ -1,0 +1,6 @@
+zh-CN:
+  errors:
+    forbidden:
+      code: '403'
+      title: '禁止访问'
+      content: '你没有权限访问这个页面。'

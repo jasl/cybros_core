@@ -1,0 +1,22 @@
+zh-CN:
+  layouts:
+    header:
+      brand: "Cybros Core"
+      account_menu:
+        admin: "后台管理"
+        profile: "编辑个人资料"
+        sign_out: "登出"
+    footer:
+      copyright: "© 2019 Jasl, MIT license"
+    sidebar:
+      application:
+        header: "Home"
+        home: "首页"
+      accounts:
+        header: "用户设置"
+        profile: "个人信息"
+        password: "密码"
+      admin:
+        header: "后台管理"
+        home: "总览"
+        users: "用户"
