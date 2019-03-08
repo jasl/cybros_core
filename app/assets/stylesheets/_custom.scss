@@ -2,10 +2,6 @@
 
 // Custom styles for this template
 
-.bg-gray-150 {
-  background-color: $gray-150 !important;
-}
-
 a.card-link,
 a.card-link:hover {
   color: inherit;
@@ -166,6 +162,8 @@ body:not(.sidebar-minimized) {
   }
 
   @include media-breakpoint-down(md) {
+    padding-left: 0;
+
     .navbar-brand {
       position: relative;
       left: auto;
