@@ -1,0 +1,19 @@
+# This file is for unifying the coding style for different editors and IDEs
+# editorconfig.org
+
+root = true
+
+[*]
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+indent_style = space
+indent_size = 2
+end_of_line = lf
+
+[node_modules/**]
+charset = ignore
+end_of_line = ignore
+indent_size = ignore
+indent_style = ignore
+trim_trailing_whitespace = ignore
