@@ -1,6 +1,7 @@
 GIT
   remote: https://github.com/rails/web-console.git
   revision: 3b0e6d6521f46d347bb42252865c3c87b8a84b65
+  branch: master
   specs:
     web-console (3.7.0)
       actionview (>= 5.2)
