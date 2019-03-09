@@ -1,6 +1,8 @@
 Cybros Core
 ====
 
+[![CircleCI](https://circleci.com/gh/jasl/cybros_core.svg?style=svg)](https://circleci.com/gh/jasl/cybros_core)
+
 This is a barebone Rails 6.0 app to show some basic configurations.
 
 I'm used to maintain a barebone app that helps me build new project quickly,
