@@ -1,5 +1,5 @@
 <%- body_class = "app header-fixed" %>
-<%- body_class << " sidebar-fixed sidebar-lg-show sidebar-show" if has_sidebar? %>
+<%- body_class << " sidebar-fixed sidebar-lg-show" if has_sidebar? %>
 <%- body_class << " aside-menu-fixed" if has_aside? %>
 <% content_for(:body_class, body_class) %>
 <% content_for :content do %>
