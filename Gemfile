@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "2.6.2"
+ruby "~> 2.6.3"
 
 gem "rails", "~> 6.0.0.beta3"
 gem "rails-i18n", "~> 6.0.0.beta1"
@@ -66,8 +66,7 @@ group :test do
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", ">= 2.15"
   gem "selenium-webdriver"
-  # Easy installation and use of chromedriver to run system tests with Chrome
-  gem "chromedriver-helper"
+  gem "webdrivers"
 end
 
 group :circle_ci do
