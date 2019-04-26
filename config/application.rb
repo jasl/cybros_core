@@ -44,6 +44,7 @@ module CybrosCore
         require_dependency(c)
       end
     end
+    Rails.autoloaders.main.ignore("#{Rails.root}/app/overrides")
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
