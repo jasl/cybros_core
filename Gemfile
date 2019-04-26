@@ -5,7 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "~> 2.6.3"
 
-gem "rails", "~> 6.0.0.beta3"
+gem "rails", "~> 6.0.0.rc1"
 gem "rails-i18n", "~> 6.0.0.beta1"
 
 # Use postgresql as the database for Active Record
@@ -31,7 +31,7 @@ gem "jbuilder", "~> 2.5"
 # gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem "bootsnap", ">= 1.4.1", require: false
+gem "bootsnap", ">= 1.4.4", require: false
 
 gem "pry-rails"
 
