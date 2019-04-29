@@ -59,7 +59,8 @@ group :development do
   gem "listen", ">= 3.0.5", "< 3.2"
 
   gem "brakeman", require: false
-  gem "rubocop"
+  gem "rubocop", require: false
+  gem "rubocop-performance", require: false
 end
 
 group :test do

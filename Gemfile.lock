@@ -1,13 +1,13 @@
 GIT
   remote: https://github.com/rails/web-console.git
-  revision: 3b0e6d6521f46d347bb42252865c3c87b8a84b65
+  revision: 61ce65b599f56809de1bd8da6590a80acbd92017
   branch: master
   specs:
     web-console (3.7.0)
-      actionview (>= 5.2)
-      activemodel (>= 5.2)
+      actionview (>= 6.0.0.a)
+      activemodel (>= 6.0.0.a)
       bindex (>= 0.4.0)
-      railties (>= 5.2)
+      railties (>= 6.0.0.a)
 
 GEM
   remote: https://rubygems.org/
@@ -184,7 +184,7 @@ GEM
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
     parallel (1.17.0)
-    parser (2.6.2.1)
+    parser (2.6.3.0)
       ast (~> 2.4.0)
     pry (0.12.2)
       coderay (~> 1.1.0)
@@ -194,7 +194,6 @@ GEM
       pry (~> 0.10)
     pry-rails (0.3.9)
       pry (>= 0.10.4)
-    psych (3.1.0)
     public_suffix (3.0.3)
     puma (3.12.1)
     rack (2.0.7)
@@ -240,14 +239,15 @@ GEM
     responders (2.4.1)
       actionpack (>= 4.2.0, < 6.0)
       railties (>= 4.2.0, < 6.0)
-    rubocop (0.67.2)
+    rubocop (0.68.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
       parser (>= 2.5, != 2.5.1.1)
-      psych (>= 3.1.0)
       rainbow (>= 2.2.2, < 4.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 1.6)
+    rubocop-performance (1.1.0)
+      rubocop (>= 0.67.0)
     ruby-progressbar (1.10.0)
     ruby_dep (1.5.0)
     rubyzip (1.2.2)
@@ -311,6 +311,7 @@ DEPENDENCIES
   rails (~> 6.0.0.rc1)
   rails-i18n (~> 6.0.0.beta1)
   rubocop
+  rubocop-performance
   selenium-webdriver
   sqlite3 (~> 1.4)
   turbolinks (~> 5)
