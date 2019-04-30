@@ -8,6 +8,7 @@ AllCops:
   Exclude:
     - 'node_modules/**/*'
     - 'db/schema.rb'
+    - 'bin/**/*'
 
 Performance:
   Exclude:
