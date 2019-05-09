@@ -9,7 +9,7 @@
         <%= form_with(model: resource, as: resource_name, url: password_path(resource_name), local: true) do |f| %>
           <div class="form-group">
             <%= f.label :email %>
-            <%= f.email_field :email, id: "user_email", autofocus: true, required: "required", class: "form-control", class_for_error: "is-invalid" %>
+            <%= f.email_field :email, id: "user_email", autofocus: true, autocomplete: "username", required: "required", class: "form-control", class_for_error: "is-invalid" %>
             <%= f.error_message :email, class: "invalid-feedback" %>
           </div>
 
