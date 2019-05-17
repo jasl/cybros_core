@@ -200,4 +200,13 @@ body:not(.sidebar-minimized) {
   background-color: $gray-200;
 }
 
+.help-block {
+  font-size: $help-block-font-size;
+}
+
+.error-message {
+  color: $error-message-color;
+}
+
 // Here you can add other styles
+
