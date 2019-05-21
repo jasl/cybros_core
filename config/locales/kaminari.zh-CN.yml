@@ -1,0 +1,14 @@
+zh-CN:
+  helpers:
+    page_entries_info:
+      more_pages:
+        display_entries: "显示 %{entry_name} <b>%{first} - %{last}</b>  共<b>%{total}</b> "
+      one_page:
+        display_entries: "显示 <b>所有 %{count}</b> %{entry_name}"
+  views:
+    pagination:
+      first: "&laquo; 第一页"
+      last: "最后一页 &raquo;"
+      next: "下一页 &rsaquo;"
+      previous: "&lsaquo; 上一页"
+      truncate: "&hellip;"
