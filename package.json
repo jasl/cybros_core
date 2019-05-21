@@ -4,9 +4,9 @@
   "private": true,
   "dependencies": {
     "@coreui/coreui": "^2.1.6",
-    "@rails/actioncable": "^6.0.0-beta3",
-    "@rails/activestorage": "^6.0.0-beta3",
-    "@rails/ujs": "^6.0.0-beta3",
+    "@rails/actioncable": "^6.0.0-rc1",
+    "@rails/activestorage": "^6.0.0-rc1",
+    "@rails/ujs": "^6.0.0-rc1",
     "@rails/webpacker": "^4.0.1",
     "bootstrap": "^4.2.1",
     "jquery": "^3.3.1",
