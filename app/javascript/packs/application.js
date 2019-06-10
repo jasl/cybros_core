@@ -7,6 +7,9 @@ const importAll = (r) => r.keys().map(r)
 importAll(require.context('images', false, /\.(png|jpe?g|svg)$/i));
 //importAll(require.context('@fortawesome/fontawesome-free/webfonts', false, /\.(eot|svg|ttf|woff?2)$/i));
 
+import "core-js/stable";
+import "regenerator-runtime/runtime";
+import "@stimulus/polyfills";
 import "bootstrap";
 import "@coreui/coreui"
 
@@ -16,3 +19,4 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 //require("@rails/activestorage").start()
 require("channels")
+
