@@ -1,4 +1,6 @@
-require: rubocop-performance
+require:
+  - rubocop-performance
+  - rubocop-rails
 
 AllCops:
   TargetRubyVersion: 2.6
@@ -13,9 +15,6 @@ AllCops:
 Performance:
   Exclude:
     - 'test/**/*'
-
-Rails:
-  Enabled: true
 
 # Prefer assert_not over assert !
 Rails/AssertNot:
@@ -58,6 +57,9 @@ Layout/EndAlignment:
 Layout/EmptyLineAfterMagicComment:
   Enabled: true
 
+Layout/EmptyLinesAroundAccessModifier:
+  Enabled: true
+
 Layout/EmptyLinesAroundBlockBody:
   Enabled: true
 
@@ -73,18 +75,18 @@ Layout/EmptyLinesAroundMethodBody:
 Layout/EmptyLinesAroundModuleBody:
   Enabled: true
 
-Layout/IndentFirstArgument:
-  Enabled: true
-
 # Use Ruby >= 1.9 syntax for hashes. Prefer { a: :b } over { :a => :b }.
 Style/HashSyntax:
+  Enabled: true
+
+Layout/IndentFirstArgument:
   Enabled: true
 
 # Method definitions after `private` or `protected` isolated calls need one
 # extra level of indentation.
 Layout/IndentationConsistency:
   Enabled: true
-  EnforcedStyle: rails
+  EnforcedStyle: indented_internal_methods
 
 # Two spaces, no tabs (for indentation).
 Layout/IndentationWidth:
@@ -114,6 +116,9 @@ Layout/SpaceAroundOperators:
 Layout/SpaceBeforeComma:
   Enabled: true
 
+Layout/SpaceBeforeComment:
+  Enabled: true
+
 Layout/SpaceBeforeFirstArg:
   Enabled: true
 
@@ -127,6 +132,8 @@ Style/MethodDefParentheses:
 Style/FrozenStringLiteralComment:
   Enabled: true
   EnforcedStyle: always
+  Exclude:
+    - 'db/migrate/**/*.rb'
 
 Style/RedundantFreeze:
   Enabled: true
