@@ -2,6 +2,9 @@
   "name": "cybros",
   "version": "0.0.1",
   "private": true,
+  "scripts": {
+    "syncyarnlock": "syncyarnlock -s -k && yarn install --check-files"
+  },
   "dependencies": {
     "@coreui/coreui": "^2.1.12",
     "@rails/actioncable": "^6.0.0-rc1",
@@ -17,6 +20,7 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.9.0",
+    "syncyarnlock": "^1.0.12",
     "webpack": "^4.35.0",
     "webpack-dev-server": "^3.7.2"
   }
