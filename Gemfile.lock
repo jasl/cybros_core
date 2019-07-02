@@ -119,13 +119,13 @@ GEM
       dry-initializer (~> 3.0)
       dry-logic (~> 1.0)
       dry-types (~> 1.0)
-    dry-types (1.0.1)
+    dry-types (1.1.0)
       concurrent-ruby (~> 1.0)
       dry-container (~> 0.3)
       dry-core (~> 0.4, >= 0.4.4)
       dry-equalizer (~> 0.2, >= 0.2.2)
       dry-inflector (~> 0.1, >= 0.1.2)
-      dry-logic (~> 1.0)
+      dry-logic (~> 1.0, >= 1.0.2)
     erubi (1.8.0)
     ffi (1.11.1)
     globalid (0.4.2)
@@ -283,7 +283,7 @@ GEM
     websocket-extensions (0.1.4)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.1.6)
+    zeitwerk (2.1.8)
 
 PLATFORMS
   ruby
