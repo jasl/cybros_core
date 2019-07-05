@@ -8,11 +8,18 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/ruby:2.6.3-node-browsers
+        environment:
+          RAILS_ENV: test
+          RACK_ENV: test
+          PG_HOST: 127.0.0.1
+          PG_USERNAME: root
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/postgres:9.4
+      - image: circleci/postgres:latest
+        environment:
+          POSTGRES_USER: root
 
     working_directory: ~/repo
 
@@ -20,7 +27,11 @@ jobs:
       - checkout
 
       # Use latest Bundler
-      - run: gem update bundler
+      - run:
+          name: Update RubyGem & Bundler
+          command: |
+            sudo gem update --system
+            gem install bundler
 
       # Download and cache dependencies
       - restore_cache:
@@ -30,14 +41,14 @@ jobs:
             - v2-dependencies-
 
       - run:
-          name: install dependencies
+          name: Install dependencies
           command: |
-            bundle install --jobs=4 --retry=3 --path ./vendor/bundle --with test circle_ci
+            bundle install --jobs=4 --retry=3 --path vendor/bundle --with test circle_ci
 
       - save_cache:
-          paths:
-            - ./vendor/bundle
           key: v2-dependencies-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
 
       - restore_cache:
           keys:
@@ -47,33 +58,32 @@ jobs:
             - v2-dependencies-
 
       - run:
-          name: install Yarn dependencies
+          name: Install Yarn dependencies
           command: |
-             ./bin/yarn install --check-files
+             bin/yarn install --check-files
 
       - save_cache:
-          paths:
-            - ./node_modules
           key: v2-dependencies-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules
 
       - run:
-          name: copy configs
+          name: Copy configs
           command: |
-            cp ./config/database.yml.sqlite.example ./config/database.yml
-            cp ./config/mailer.yml.example ./config/mailer.yml
-            cp ./config/credentials.yml.example ./config/credentials.yml
-            bundle exec rails credentials:encrypt
+            cp .circleci/app_config/database.yml config/database.yml
+            cp config/mailer.yml.example config/mailer.yml
+            cp config/credentials.yml.example config/credentials.yml
+            bin/rails credentials:encrypt
 
       # Database setup
-      - run: bundle exec rake db:create
-      - run: bundle exec rake db:schema:load
+      - run: bin/rails db:setup
 
       # run tests!
       - run:
-          name: run tests
+          name: Run tests
           command: |
             mkdir /tmp/test-results
-            bundle exec rails test
+            bin/rails test
 
       # collect reports
       - store_test_results:
