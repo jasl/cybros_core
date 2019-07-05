@@ -96,7 +96,7 @@ TODO:
 - Clone it
 - `bundle`
 - `yarn`
-- `cp config/database.yml.sqlite.example config/database.yml`
+- `cp config/database.yml.example config/database.yml`
 - `cp config/credentials.yml.example config/credentials.yml` & `rails credentials:encrypt`
 - `cp config/mailer.yml.example config/mailer.yml`
 - `rails db:migrate`

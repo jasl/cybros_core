@@ -20,10 +20,16 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  connect_timeout: 2
-  checkout_timeout: 5
-  variables:
-    statement_timeout: 5000 # ms
+
+  # number of seconds to wait for connection to succeed
+  #connect_timeout: 2
+
+  # number of seconds to wait for a connection to become available before giving up and raising a timeout error
+  #checkout_timeout: 5
+
+  #variables:
+    # number of seconds to wait for query to returned
+    #statement_timeout: 5000 # ms
 
 development:
   <<: *default

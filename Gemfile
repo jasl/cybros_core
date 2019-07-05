@@ -9,9 +9,7 @@ gem "rails", "~> 6.0.0.rc1"
 gem "rails-i18n", "~> 6.0.0.beta1"
 
 # Use postgresql as the database for Active Record
-# gem "pg", ">= 0.18", "< 2.0"
-# Use sqlite as the database for Active Record
-gem "sqlite3", "~> 1.4"
+gem "pg", ">= 0.18", "< 2.0"
 
 # Use Puma as the app server
 gem "puma", "~> 4.0"
