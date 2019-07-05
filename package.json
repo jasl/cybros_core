@@ -23,7 +23,6 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.9.0",
-    "syncyarnlock": "^1.0.12",
     "typescript": "^3.5.2",
     "webpack": "^4.35.2",
     "webpack-dev-server": "^3.7.2"
