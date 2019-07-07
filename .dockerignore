@@ -1,0 +1,95 @@
+# Git
+
+.git
+.gitignore
+
+#
+# Rails
+#
+
+*.rbc
+capybara-*.html
+public/system
+coverage/
+spec/tmp
+**.orig
+
+# Misc
+
+.circleci
+_screenshots
+README.md
+
+# Things should generated in container
+
+node_modules
+.bundle
+/vendor/bundle
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+.byebug_history
+
+# Ignore files in development.
+
+/storage/*
+!/storage/.keep
+
+db/*.sqlite3
+db/*.sqlite3-journal
+
+/public/assets
+/public/packs
+/public/packs-test
+yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+
+# General
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+
+._*
+
+# Icon must end with two \r
+
+Icon
+
+# Files that might appear in the root of a volume
+
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Jetbrains
+
+.idea
+
+# Sublime
+
+*.sublime-workspace
+*.sublime-project
+
+# VIM
+
+.*.swp
+.*.swo
