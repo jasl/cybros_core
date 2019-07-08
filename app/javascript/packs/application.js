@@ -11,7 +11,7 @@ import "core-js/stable";
 import "regenerator-runtime/runtime";
 import "@stimulus/polyfills";
 import "bootstrap";
-import "@coreui/coreui"
+// import "@coreui/coreui" // 移除coreui的js
 
 import "stylesheets/application"
 
