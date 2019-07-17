@@ -89,6 +89,8 @@ module NavigationHelper
       page.any? do |single_page|
         current_page?(single_page)
       end
+    elsif namespace = options.delete(:namespace)
+      current_namespace?(namespace)
     else
       c = options.delete(:controller)
       a = options.delete(:action)

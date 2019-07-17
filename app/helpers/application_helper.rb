@@ -60,6 +60,20 @@ module ApplicationHelper
     end
   end
 
+  # Check if current controller is under the given namespace
+  #
+  # namespace - One or more controller names to check (using path notation when inside namespaces)
+  #
+  # Examples
+  #
+  #   # On Admin::ApplicationController
+  #   current_namespace?(:application)         # => false
+  #   current_namespace?('admin/application')  # => true
+  #   current_namespace?('gitlab/application') # => false
+  def current_namespace?(namespace)
+    controller.controller_path.start_with? namespace.to_s.downcase
+  end
+
   # Check if a particular action is the current one
   #
   # args - One or more action names to check
