@@ -2,6 +2,11 @@ seo_meta:
   name: Cybros Core
   description: Cybros Core
   keywords: []
+
+#url_options:
+#  host: 0.0.0.0:3000
+#  protocol: http
+
 admin:
   emails: []
 

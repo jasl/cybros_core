@@ -11,4 +11,6 @@ class User < ApplicationRecord
   def admin?
     email.in? Settings.admin.emails
   end
+
+  include DeviseFailsafe
 end

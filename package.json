@@ -7,9 +7,9 @@
   },
   "dependencies": {
     "@coreui/coreui": "^2.1.12",
-    "@rails/actioncable": "^6.0.0-rc1",
-    "@rails/activestorage": "^6.0.0-rc1",
-    "@rails/ujs": "^6.0.0-rc1",
+    "@rails/actioncable": "^6.0.0-rc2",
+    "@rails/activestorage": "^6.0.0-rc2",
+    "@rails/ujs": "^6.0.0-rc2",
     "@rails/webpacker": "^4.0.7",
     "@stimulus/polyfills": "^1.1.1",
     "bootstrap": "^4.3.1",
@@ -17,14 +17,14 @@
     "jquery": "^3.4.1",
     "perfect-scrollbar": "^1.4.0",
     "popper.js": "^1.15.0",
-    "regenerator-runtime": "^0.13.2",
+    "regenerator-runtime": "^0.13.3",
     "stimulus": "^1.1.1",
     "turbolinks": "^5.2.0"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.9.0",
-    "typescript": "^3.5.2",
-    "webpack": "^4.35.2",
+    "typescript": "^3.5.3",
+    "webpack": "^4.38.0",
     "webpack-dev-server": "^3.7.2"
   }
 }
