@@ -72,6 +72,17 @@ module NavigationHelper
     end
   end
 
+  def nav_link_to(path = {}, name = nil, options = nil, html_options = nil, &block)
+    klass = active_nav_item?(path) ? "active" : ""
+
+    # Add our custom class into the html_options, which may or may not exist
+    # and which may or may not already have a :class key
+    html_options ||= {}
+    html_options[:class] = [*html_options[:class], klass].join(" ").strip
+
+    link_to name, options, html_options, &block
+  end
+
   def active_nav_item?(options)
     if path = options.delete(:path)
       unless path.respond_to?(:each)
