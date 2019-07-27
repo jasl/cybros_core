@@ -9,7 +9,7 @@ AllCops:
   DisabledByDefault: true
   Exclude:
     - 'node_modules/**/*'
-    - 'db/schema.rb'
+    - 'db/**/*'
     - 'bin/**/*'
 
 Performance:
