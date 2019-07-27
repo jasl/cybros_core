@@ -46,6 +46,21 @@ module CybrosCore
     end
     Rails.autoloaders.main.ignore("#{Rails.root}/app/overrides")
 
+    # Read ActionMailer config from config/mailer.yml
+    initializer "action_mailer.set_configs.set_yaml_configs", before: "action_mailer.set_configs" do |app|
+      next unless File.exist?(Rails.root.join("config", "mailer.yml"))
+
+      configure = app.config_for("mailer").deep_symbolize_keys
+      configure.each do |key, value|
+        setter = "#{key}="
+        unless app.config.action_mailer.respond_to? setter
+          raise "Can't set option `#{key}` to ActionMailer, make sure that options in config/mailer.yml are valid."
+        end
+
+        app.config.action_mailer.send(setter, value)
+      end
+    end
+
     # Separate ActiveStorage key base
     # initializer "app.active_storage.verifier", after: "active_storage.verifier" do
     #   config.after_initialize do |app|
