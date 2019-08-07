@@ -7,7 +7,9 @@ class Admin::UsersController < Admin::ApplicationController
   def index
     prepare_meta_tags title: t(".title")
 
-    @users = User.all.page(params[:page]).per(params[:per_page])
+    @users = User.all
+    @users = @users.where("email LIKE ?", "%#{params[:user_email]}%") if params[:user_email].present?
+    @users = @users.page(params[:page]).per(params[:per_page])
   end
 
   def show

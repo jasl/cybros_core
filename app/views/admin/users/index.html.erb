@@ -12,7 +12,13 @@
       <h3 class="page-title">
         <%= t(".title") %>
       </h3>
-
+      <%= form_tag admin_users_path, method: :get, class: 'form-inline' do -%>
+        <div class="form-group">
+          <label class="mr-1" for="text-user-name"><%= t(".table.email") -%>：</label>
+          <%= text_field_tag 'user_email', params[:user_email], class: 'form-control', id: 'text-user-name' %>
+        </div>
+        <div><%= submit_tag t(".actions.search"), class: 'btn btn-primary' %></div>
+      <% end -%>
       <div class="table-responsive">
         <table class="table table-striped">
           <thead>

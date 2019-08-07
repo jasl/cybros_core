@@ -22,6 +22,7 @@ en:
         title: "User Management"
         actions:
           new: "New User"
+          search: "Search"
         table:
           id: "Id"
           email: "Email"
