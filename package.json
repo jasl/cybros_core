@@ -7,9 +7,9 @@
   },
   "dependencies": {
     "@coreui/coreui": "^2.1.12",
-    "@rails/actioncable": "^6.0.0-rc2",
-    "@rails/activestorage": "^6.0.0-rc2",
-    "@rails/ujs": "^6.0.0-rc2",
+    "@rails/actioncable": "^6.0.0",
+    "@rails/activestorage": "^6.0.0",
+    "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "^4.0.7",
     "@stimulus/polyfills": "^1.1.1",
     "bootstrap": "^4.3.1",

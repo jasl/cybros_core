@@ -5,8 +5,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "~> 2.6.3"
 
-gem "rails", "~> 6.0.0.rc2"
-gem "rails-i18n", "~> 6.0.0.beta1"
+gem "rails", "~> 6.0.0"
+gem "rails-i18n"
 
 # Use postgresql as the database for Active Record
 gem "pg", ">= 0.18", "< 2.0"
@@ -35,7 +35,7 @@ gem "pry-rails"
 
 gem "config"
 
-gem "devise"
+gem "devise", github: "plataformatec/devise"
 gem "devise_invitable"
 gem "devise-i18n"
 
