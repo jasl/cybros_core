@@ -22,8 +22,7 @@ module Accounts
     private
 
       def set_user
-        # Generate the same SQL with `current_user` that we can benefit caching
-        @user = User.order(id: :asc).find(current_user.id)
+        @user = current_user
       end
 
       def user_params
