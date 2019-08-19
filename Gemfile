@@ -35,7 +35,7 @@ gem "pry-rails"
 
 gem "config"
 
-gem "devise", github: "plataformatec/devise"
+gem "devise"
 gem "devise_invitable"
 gem "devise-i18n"
 
