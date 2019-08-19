@@ -13,6 +13,12 @@
           <%= t("layouts.sidebar.accounts.password") %>
         <% end %>
       <% end %>
+      <%= nav_item controller: 'accounts/jwts', html_options: {class: "nav-item"} do %>
+        <%= link_to account_jwts_path, class: "nav-link" do %>
+          <i class="nav-icon fas fa-pencil-alt"></i>
+          <%= t("layouts.sidebar.accounts.application") %>
+        <% end %>
+      <% end %>
     </ul>
   </nav>
   <button class="sidebar-minimizer" type="button"></button>

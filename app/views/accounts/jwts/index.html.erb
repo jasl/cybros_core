@@ -1,0 +1,35 @@
+<div class="row justify-content-center">
+  <div class="col-lg-12">
+    <h3 class="page-title">
+      <%= t(".title") %>
+    </h3>
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th><%= t(".table.user") %></th>
+          <th><%= t(".table.jti") %></th>
+          <th><%= t(".table.aud") %></th>
+          <th><%= t(".table.exp") %></th>
+          <th><%= t(".table.exp_relative") %></th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @whitelisted_jwts.each do |jwt| %>
+          <tr>
+            <td><%= jwt.user.email -%></td>
+            <td><%= jwt.jti -%></td>
+            <td><%= jwt.aud -%></td>
+            <td><%= jwt.exp.in_time_zone -%></td>
+            <td><%= time_ago_in_words jwt.exp -%></td>
+            <td>
+              <%= link_to t(".actions.delete"), account_jwt_path(jwt), method: :delete, data: { confirm: '你确定要删除吗？' } %>
+            </td>
+          </tr>
+        <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

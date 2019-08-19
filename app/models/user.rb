@@ -16,4 +16,8 @@ class User < ApplicationRecord
 
   include DeviseFailsafe
   include Devise::JWT::RevocationStrategies::Whitelist
+
+  def expired_jwts
+    whitelisted_jwts.where("exp <= ?", Time.now)
+  end
 end

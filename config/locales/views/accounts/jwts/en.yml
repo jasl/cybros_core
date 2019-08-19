@@ -1,0 +1,16 @@
+---
+en:
+  accounts:
+    jwts:
+      index:
+        title: "Manage your applications and jwts"
+        table:
+          user: "User"
+          jti: "JWT ID"
+          aud: "Audience"
+          exp: "Token expire time"
+          exp_relative: "Token relative expire time"
+        actions:
+          delete: "Delete"
+        updated: "Updated"
+        deleted: "Deleted"

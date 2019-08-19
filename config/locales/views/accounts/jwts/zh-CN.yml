@@ -1,0 +1,16 @@
+---
+zh-CN:
+  accounts:
+    jwts:
+      index:
+        title: "管理应用程序及其授权"
+        table:
+          user: "用户"
+          jti: "JWT ID"
+          aud: "audience"
+          exp: "token 过期时间"
+          exp_relative: "相对过期时间"
+        actions:
+          delete: "删除"
+        updated: "已更新"
+        deleted: "已删除"

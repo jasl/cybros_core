@@ -14,6 +14,7 @@ en:
       accounts:
         profile: "Profile"
         password: "Password"
+        application: "Application"
       admin:
         home: "Home"
         users: "Users"

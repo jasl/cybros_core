@@ -16,6 +16,7 @@ zh-CN:
         header: "用户设置"
         profile: "个人信息"
         password: "密码"
+        application: "应用程序"
       admin:
         header: "后台管理"
         home: "总览"

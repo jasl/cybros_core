@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   namespace :account, module: "accounts" do
     resource :password, only: %i[show update]
     resource :profile, only: %i[show update]
+    resources :jwts, only: %i[index update destroy]
   end
 
   namespace :admin do
