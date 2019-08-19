@@ -53,7 +53,7 @@ ActiveRecord::Schema.define(version: 2019_08_15_060430) do
 
   create_table "whitelisted_jwts", force: :cascade do |t|
     t.string "jti", null: false
-    t.string "aud"
+    t.string "aud", null: false
     t.datetime "exp", null: false
     t.bigint "user_id", null: false
     t.index ["jti"], name: "index_whitelisted_jwts_on_jti", unique: true
