@@ -12,5 +12,9 @@ en:
           exp_relative: "Token relative expire time"
         actions:
           delete: "Delete"
-        updated: "Updated"
+      create:
+        created: "Created"
+      destroy:
         deleted: "Deleted"
+      clean_expired_jwts:
+        done: "All expired jwts is cleaned."

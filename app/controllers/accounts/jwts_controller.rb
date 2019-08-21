@@ -8,9 +8,9 @@ module Accounts
       @whitelisted_jwts = @user.whitelisted_jwts
     end
 
-    def update
+    def create
       if @user.update(jwts_params)
-        redirect_to account_jwts_path, notice: t("accounts.jwts.index.updated")
+        redirect_to account_jwts_path, notice: t(".created")
       else
         render :index
       end
@@ -19,7 +19,14 @@ module Accounts
     def destroy
       @jwt = @user.whitelisted_jwts.find(params[:id])
       @jwt.destroy!
-      redirect_to account_jwts_path, notice: t("accounts.jwts.index.deleted")
+      redirect_to account_jwts_path, notice: t(".deleted")
+    end
+
+    def clean_expired_jwts
+      @user.whitelisted_jwts.where("exp < ?", Time.now).each do |jwt|
+        jwt.destroy
+      end
+      redirect_to account_jwts_path, notice: t(".done")
     end
 
     private

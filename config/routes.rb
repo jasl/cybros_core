@@ -4,7 +4,11 @@ Rails.application.routes.draw do
   namespace :account, module: "accounts" do
     resource :password, only: %i[show update]
     resource :profile, only: %i[show update]
-    resources :jwts, only: %i[index update destroy]
+    resources :jwts, only: %i[index create destroy] do
+      collection do
+        delete :clean_expired_jwts
+      end
+    end
   end
 
   namespace :api do

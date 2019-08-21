@@ -12,5 +12,9 @@ zh-CN:
           exp_relative: "相对过期时间"
         actions:
           delete: "删除"
-        updated: "已更新"
+      create:
+        created: "已创建"
+      destroy:
         deleted: "已删除"
+      clean_expired_jwts:
+        done: "所以已经过期的JWT已经清理。"
