@@ -10,10 +10,14 @@ en:
           aud: "Audience"
           exp: "Token expire time"
           exp_relative: "Token relative expire time"
+        form:
+          aud: "Audience"
+          exp_hours: "Expiration hours"
         actions:
+          create: "Create"
           delete: "Delete"
       create:
-        created: "Created"
+        created: "New JWT Token created, please record down the token and it will only appears this time! Bearer %{jwt}"
       destroy:
         deleted: "Deleted"
       clean_expired_jwts:

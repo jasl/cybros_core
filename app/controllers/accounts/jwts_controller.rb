@@ -9,8 +9,15 @@ module Accounts
     end
 
     def create
-      if @user.update(jwts_params)
-        redirect_to account_jwts_path, notice: t(".created")
+      exp_seconds = params[:exp_hours].to_i.hours
+      user_encoder = Warden::JWTAuth::UserEncoder.new
+      payload = user_encoder.helper.payload_for_user(current_user, "user")
+      payload["exp"] = Time.now.to_i + exp_seconds.to_i
+      payload["aud"] = params[:aud]
+      jwt = Warden::JWTAuth::TokenEncoder.new.call(payload)
+      Rails.logger.debug "jwt: #{jwt}"
+      if @user.whitelisted_jwts.create(jti: payload["jti"], aud: payload["aud"], exp: Time.at(payload["exp"]))
+        redirect_to account_jwts_path, alert: t(".created", jwt: jwt)
       else
         render :index
       end
@@ -33,10 +40,6 @@ module Accounts
 
       def set_user
         @user = current_user
-      end
-
-      def jwts_params
-        params.require(:user).permit(:email, :full_name)
       end
   end
 end
