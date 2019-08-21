@@ -7,6 +7,10 @@ Rails.application.routes.draw do
     resources :jwts, only: %i[index update destroy]
   end
 
+  namespace :api do
+    match "me" => "application#user_info", via: :options
+  end
+
   namespace :admin do
     root to: "home#index"
 
