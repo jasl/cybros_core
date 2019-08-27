@@ -38,10 +38,22 @@
         <% @whitelisted_jwts.each do |jwt| %>
           <tr>
             <td><%= jwt.user.email -%></td>
-            <td><%= jwt.jti -%></td>
+            <td>
+              <% if jwt.exp <= Time.now %>
+                <del><%= jwt.jti -%></del>
+              <% else %>
+                <%= jwt.jti -%>
+              <% end %>
+            </td>
             <td><%= jwt.aud -%></td>
             <td><%= jwt.exp.in_time_zone -%></td>
-            <td><%= time_ago_in_words jwt.exp -%></td>
+            <td>
+              <% if jwt.exp <= Time.now %>
+                <del><%= time_ago_in_words jwt.exp -%></del>
+              <% else %>
+                <%= time_ago_in_words jwt.exp -%>
+              <% end %>
+            </td>
             <td>
               <%= link_to t(".actions.delete"), account_jwt_path(jwt), method: :delete, data: { confirm: '你确定要删除吗？' } %>
             </td>
