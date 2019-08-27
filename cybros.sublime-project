@@ -4,7 +4,7 @@
     {
       "path": ".",
       "folder_exclude_patterns": ["_screenshots", ".bundle",".idea",".capistrano","log","tmp",
-                                  "public/assets","coverage","node_modules","public/packs"],
+                                  "public/assets","coverage","node_modules","public/packs", "storage"],
       "file_exclude_patterns": ["*.sublime-workspace",".byebug_history",".DS_Store","config/master.key",
                                 "config/credentials.yml.enc", "db/*.sqlite3",]
     }
