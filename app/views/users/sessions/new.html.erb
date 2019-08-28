@@ -12,7 +12,7 @@
         <% end %>
       </ul>
       <div class="card-body p-4">
-        <%= form_with(model: resource, as: resource_name, url: session_path(resource_name), local: true) do |f| %>
+        <%= form_with(model: resource, as: resource_name, url: session_path(resource_name), id: "user-sign-in", local: true) do |f| %>
           <div class="form-group">
             <%= f.label :email %>
             <%= f.email_field :email, id: "user_email", autocomplete: "username", autofocus: true, required: "required", class: "form-control", class_for_error: "is-invalid" %>
