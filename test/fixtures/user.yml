@@ -1,0 +1,7 @@
+---
+user_eric:
+  id: 1
+  email: "eric@cloud-mes.com"
+  confirmed_at: <%= Time.zone.now %>
+  # password: 123456
+  encrypted_password: '$2a$11$I3DE/JkhWB03DUC.LFaoEuwVRU7Kk474udMsmF/AiX5IAxm5CoXcS'
