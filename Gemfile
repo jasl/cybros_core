@@ -12,7 +12,7 @@ gem "rails-i18n"
 gem "pg", ">= 0.18", "< 2.0"
 
 # Use Puma as the app server
-gem "puma", "~> 4.0"
+gem "puma", "~> 4.2.1"
 # Use development version of Webpacker
 gem "webpacker", "~> 4.0"
 
@@ -54,7 +54,7 @@ end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem "web-console"
-  gem "listen", ">= 3.0.5", "< 3.2"
+  gem "listen"
 
   gem "brakeman", require: false
   gem "rubocop", require: false
