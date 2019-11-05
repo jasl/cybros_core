@@ -23,7 +23,7 @@
 /public/assets
 .byebug_history
 
-# Ignore credentials.
+# Ignore encryted credentials.
 /config/master.key
 /config/credentials.yml
 /config/credentials.yml.enc
@@ -37,6 +37,7 @@ yarn-debug.log*
 
 /config/database.yml
 /config/mailer.yml
+/config/storage.yml
 
 config/settings.local.yml
 config/settings/*.local.yml

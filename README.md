@@ -67,7 +67,7 @@ I do a hack that you can config ActionMailer in one place.
 
 See `config/mailer.yml`
 
-Codes in `lib/monkey_patches/action_mailer.rb`
+Codes in `config/application.rb`
 
 ### Implemented a full-feature layouts & views 
 
