@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "~> 2.6.3"
+ruby "~> 2.6.5"
 
 gem "rails", "~> 6.0.1"
 gem "rails-i18n"
@@ -12,7 +12,7 @@ gem "rails-i18n"
 gem "pg", ">= 0.18", "< 2.0"
 
 # Use Puma as the app server
-gem "puma", "~> 4.2.1"
+gem "puma", "~> 4.3.0"
 # Use development version of Webpacker
 gem "webpacker", "~> 4.0"
 
