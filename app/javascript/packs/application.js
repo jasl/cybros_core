@@ -24,5 +24,5 @@ require("turbolinks").start()
 //require("@rails/activestorage").start()
 require("channels")
 
+import "turbolinks/coreui";
 import "controllers";
-
