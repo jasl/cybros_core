@@ -16,7 +16,7 @@ module Prependable
     super
 
     if const_defined?(:ClassMethods)
-      klass_methods = const_get(:ClassMethods)
+      klass_methods = const_get(:ClassMethods, false)
       base.singleton_class.prepend klass_methods
       base.instance_variable_set(:@_prepended_class_methods, klass_methods)
     end
@@ -32,7 +32,7 @@ module Prependable
     super
 
     if instance_variable_defined?(:@_prepended_class_methods)
-      const_get(:ClassMethods).prepend @_prepended_class_methods
+      const_get(:ClassMethods, false).prepend @_prepended_class_methods
     end
   end
 
