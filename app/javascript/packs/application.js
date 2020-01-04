@@ -5,7 +5,7 @@
 
 const importAll = (r) => r.keys().map(r)
 importAll(require.context('images', false, /\.(png|jpe?g|svg)$/i));
-//importAll(require.context('@fortawesome/fontawesome-free/webfonts', false, /\.(eot|svg|ttf|woff?2)$/i));
+//importAll(require.context('@fortawesome/fontawesome-free/webfonts', false, /\.(eot|svg|ttf|woff2?)$/i));
 
 import "core-js/stable";
 import "regenerator-runtime/runtime";
