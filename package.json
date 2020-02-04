@@ -12,19 +12,19 @@
     "@rails/ujs": "^6.0.2-1",
     "@rails/webpacker": "^4.2.2",
     "@stimulus/polyfills": "^1.1.1",
-    "bootstrap": "^4.3.1",
-    "core-js": "^3.3.6",
+    "bootstrap": "^4.4.1",
+    "core-js": "^3.6.4",
     "jquery": "^3.4.1",
-    "perfect-scrollbar": "^1.4.0",
-    "popper.js": "^1.16.0",
+    "perfect-scrollbar": "^1.5.0",
+    "popper.js": "^1.16.1",
     "regenerator-runtime": "^0.13.3",
     "stimulus": "^1.1.1",
     "turbolinks": "^5.2.0"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.11.2",
-    "typescript": "^3.6.4",
-    "webpack": "^4.41.2",
-    "webpack-dev-server": "^3.9.0"
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.5",
+    "webpack-dev-server": "^3.10.2"
   }
 }

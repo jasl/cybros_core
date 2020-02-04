@@ -39,12 +39,13 @@ module CybrosCore
       g.test_framework nil
     end
 
+    overrides = "#{Rails.root}/app/overrides"
+    Rails.autoloaders.main.ignore(overrides)
     config.to_prepare do
-      Dir.glob(Rails.root + "app/overrides/**/*_override*.rb").each do |c|
-        require_dependency(c)
+      Dir.glob("#{overrides}/**/*_override.rb").each do |override|
+        load override
       end
     end
-    Rails.autoloaders.main.ignore("#{Rails.root}/app/overrides")
 
     # Read ActionMailer config from config/mailer.yml
     initializer "action_mailer.set_configs.set_yaml_configs", before: "action_mailer.set_configs" do |app|
