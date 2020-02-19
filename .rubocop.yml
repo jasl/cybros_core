@@ -32,9 +32,14 @@ Style/AndOr:
 
 # Do not use braces for hash literals when they are the last argument of a
 # method call.
-Style/BracesAroundHashParameters:
-  Enabled: true
-  EnforcedStyle: context_dependent
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Naming/AccessorMethodName:
+  Enabled: false
+
+Naming/MemoizedInstanceVariableName:
+  Enabled: false
 
 # Align `when` with `case`.
 Layout/CaseIndentation:
@@ -77,6 +82,17 @@ Layout/EmptyLinesAroundModuleBody:
 
 # Use Ruby >= 1.9 syntax for hashes. Prefer { a: :b } over { :a => :b }.
 Style/HashSyntax:
+  Enabled: true
+
+# Do not use braces for hash literals when they are the last argument of a
+# method call.
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
   Enabled: true
 
 Layout/FirstArgumentIndentation:
