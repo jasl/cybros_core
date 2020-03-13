@@ -1,3 +1,4 @@
+---
 # Ruby CircleCI 2.0 configuration file
 #
 # Check https://circleci.com/docs/2.0/language-ruby/ for more details
@@ -9,17 +10,15 @@ jobs:
       # specify the version you desire here
       - image: circleci/ruby:2.6.5-node-browsers
         environment:
-          RAILS_ENV: test
-          RACK_ENV: test
           PG_HOST: 127.0.0.1
-          PG_USERNAME: root
+          PG_USERNAME: cybros_test
+          RAILS_ENV: test
 
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
       - image: circleci/postgres:latest
         environment:
-          POSTGRES_USER: root
+          POSTGRES_USER: cybros_test
+          POSTGRES_DB: cybros_test
+          POSTGRES_PASSWORD: "cybros_test"
 
     working_directory: ~/repo
 

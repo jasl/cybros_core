@@ -8,3 +8,4 @@ test:
   database: cybros_test
   host: <%= ENV['PG_HOST'] %>
   username: <%= ENV['PG_USERNAME'] %>
+  password: cybros_test
