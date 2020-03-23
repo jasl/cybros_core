@@ -31,7 +31,7 @@ and partially introduce React or Vue for complex pages.
 
 A good example is Gitlab, I also cheat some useful helpers to this app.
 
-#### Webpacker 4 without Sprockets
+#### Webpacker 5 without Sprockets
 
 Webpacker can do all the jobs that Sprockets,
 and has full support of front-end community,
