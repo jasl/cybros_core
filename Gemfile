@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "~> 2.6.5"
+ruby "~> 2.7.1"
 
 gem "rails", "~> 6.0.2"
 gem "rails-i18n"
@@ -14,7 +14,7 @@ gem "pg", ">= 0.18", "< 2.0"
 # Use Puma as the app server
 gem "puma", "~> 4.3.0"
 # Use development version of Webpacker
-gem "webpacker", "~> 5.0"
+gem "webpacker", "~> 5.1"
 
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem "turbolinks", "~> 5"
