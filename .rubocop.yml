@@ -32,14 +32,14 @@ Style/AndOr:
 
 # Do not use braces for hash literals when they are the last argument of a
 # method call.
-Style/ClassAndModuleChildren:
-  Enabled: false
+Style/HashEachMethods:
+  Enabled: true
 
-Naming/AccessorMethodName:
-  Enabled: false
+Style/HashTransformKeys:
+  Enabled: true
 
-Naming/MemoizedInstanceVariableName:
-  Enabled: false
+Style/HashTransformValues:
+  Enabled: true
 
 # Align `when` with `case`.
 Layout/CaseIndentation:
@@ -62,9 +62,6 @@ Layout/EndAlignment:
 Layout/EmptyLineAfterMagicComment:
   Enabled: true
 
-Layout/EmptyLinesAroundAccessModifier:
-  Enabled: true
-
 Layout/EmptyLinesAroundBlockBody:
   Enabled: true
 
@@ -80,22 +77,11 @@ Layout/EmptyLinesAroundMethodBody:
 Layout/EmptyLinesAroundModuleBody:
   Enabled: true
 
+Layout/FirstArgumentIndentation:
+  Enabled: true
+
 # Use Ruby >= 1.9 syntax for hashes. Prefer { a: :b } over { :a => :b }.
 Style/HashSyntax:
-  Enabled: true
-
-# Do not use braces for hash literals when they are the last argument of a
-# method call.
-Style/HashEachMethods:
-  Enabled: true
-
-Style/HashTransformKeys:
-  Enabled: true
-
-Style/HashTransformValues:
-  Enabled: true
-
-Layout/FirstArgumentIndentation:
   Enabled: true
 
 # Method definitions after `private` or `protected` isolated calls need one
@@ -132,9 +118,6 @@ Layout/SpaceAroundOperators:
 Layout/SpaceBeforeComma:
   Enabled: true
 
-Layout/SpaceBeforeComment:
-  Enabled: true
-
 Layout/SpaceBeforeFirstArg:
   Enabled: true
 
@@ -148,11 +131,12 @@ Style/MethodDefParentheses:
 Style/FrozenStringLiteralComment:
   Enabled: true
   EnforcedStyle: always
-  Exclude:
-    - 'db/migrate/**/*.rb'
 
 Style/RedundantFreeze:
   Enabled: true
+
+Style/AccessModifierDeclarations:
+  Enabled: false
 
 # Use `foo {}` not `foo{}`.
 Layout/SpaceBeforeBlockBraces:
@@ -176,7 +160,7 @@ Style/StringLiterals:
   EnforcedStyle: double_quotes
 
 # Detect hard tabs, no hard tabs.
-Layout/Tab:
+Layout/IndentationStyle:
   Enabled: true
 
 # Blank lines should not have any spaces.
@@ -185,6 +169,9 @@ Layout/TrailingEmptyLines:
 
 # No trailing whitespace.
 Layout/TrailingWhitespace:
+  Enabled: true
+
+Layout/SpaceAroundMethodCallOperator:
   Enabled: true
 
 # Use quotes for string literals when they are enough.
@@ -217,6 +204,18 @@ Lint/UselessAssignment:
   Enabled: true
 
 Lint/DeprecatedClassMethods:
+  Enabled: true
+
+Lint/AssignmentInCondition:
+  Enabled: false
+
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
+
+Style/ExponentialNotation:
   Enabled: true
 
 Style/ParenthesesAroundCondition:
