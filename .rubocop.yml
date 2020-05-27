@@ -16,6 +16,45 @@ Performance:
   Exclude:
     - 'test/**/*'
 
+Rails:
+  Enabled: true
+
+Layout/LineLength:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 30
+
+Metrics/MethodLength:
+  Max: 100
+
+Metrics/BlockLength:
+  Max: 60
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/ParameterLists:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Naming/AccessorMethodName:
+  Enabled: false
+
+Naming/MemoizedInstanceVariableName:
+  Enabled: false
+
 # Prefer assert_not over assert !
 Rails/AssertNot:
   Include:
@@ -63,6 +102,9 @@ Layout/EmptyLineAfterMagicComment:
   Enabled: true
 
 Layout/EmptyLinesAroundBlockBody:
+  Enabled: true
+
+Layout/EmptyLinesAroundAttributeAccessor:
   Enabled: true
 
 # In a regular class definition, no empty lines around the body.
@@ -178,6 +220,9 @@ Layout/SpaceAroundMethodCallOperator:
 Style/RedundantPercentQ:
   Enabled: true
 
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: true
+
 Lint/AmbiguousOperator:
   Enabled: true
 
@@ -231,6 +276,9 @@ Style/RedundantReturn:
 Style/Semicolon:
   Enabled: true
   AllowAsExpressionSeparator: true
+
+Style/SlicingWithRange:
+  Enabled: true
 
 # Prefer Foo.method over Foo::method
 Style/ColonMethodCall:
