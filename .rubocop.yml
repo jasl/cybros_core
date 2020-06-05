@@ -12,48 +12,8 @@ AllCops:
     - 'db/**/*'
     - 'bin/**/*'
 
-Performance:
-  Exclude:
-    - 'test/**/*'
-
-Rails:
-  Enabled: true
-
-Layout/LineLength:
-  Enabled: false
-
-Metrics/AbcSize:
-  Max: 30
-
-Metrics/MethodLength:
-  Max: 100
-
-Metrics/BlockLength:
-  Max: 60
-
-Metrics/ClassLength:
-  Enabled: false
-
-Metrics/ParameterLists:
-  Enabled: false
-
-Style/IfUnlessModifier:
-  Enabled: false
-
-Style/GuardClause:
-  Enabled: false
-
-Style/Documentation:
-  Enabled: false
-
-Style/ClassAndModuleChildren:
-  Enabled: false
-
-Naming/AccessorMethodName:
-  Enabled: false
-
-Naming/MemoizedInstanceVariableName:
-  Enabled: false
+#Metrics/AbcSize:
+#  Max: 30
 
 # Prefer assert_not over assert !
 Rails/AssertNot:
@@ -65,23 +25,21 @@ Rails/RefuteMethods:
   Include:
     - 'test/**/*'
 
+Rails/IndexBy:
+  Enabled: true
+
+Rails/IndexWith:
+  Enabled: true
+
 # Prefer &&/|| over and/or.
 Style/AndOr:
   Enabled: true
 
-# Do not use braces for hash literals when they are the last argument of a
-# method call.
-Style/HashEachMethods:
-  Enabled: true
-
-Style/HashTransformKeys:
-  Enabled: true
-
-Style/HashTransformValues:
-  Enabled: true
-
 # Align `when` with `case`.
 Layout/CaseIndentation:
+  Enabled: true
+
+Layout/ClosingHeredocIndentation:
   Enabled: true
 
 # Align comments with method definitions.
@@ -101,10 +59,10 @@ Layout/EndAlignment:
 Layout/EmptyLineAfterMagicComment:
   Enabled: true
 
-Layout/EmptyLinesAroundBlockBody:
+Layout/EmptyLinesAroundAccessModifier:
   Enabled: true
 
-Layout/EmptyLinesAroundAttributeAccessor:
+Layout/EmptyLinesAroundBlockBody:
   Enabled: true
 
 # In a regular class definition, no empty lines around the body.
@@ -119,11 +77,11 @@ Layout/EmptyLinesAroundMethodBody:
 Layout/EmptyLinesAroundModuleBody:
   Enabled: true
 
-Layout/FirstArgumentIndentation:
-  Enabled: true
-
 # Use Ruby >= 1.9 syntax for hashes. Prefer { a: :b } over { :a => :b }.
 Style/HashSyntax:
+  Enabled: true
+
+Layout/FirstArgumentIndentation:
   Enabled: true
 
 # Method definitions after `private` or `protected` isolated calls need one
@@ -154,10 +112,10 @@ Layout/SpaceAroundEqualsInParameterDefault:
 Layout/SpaceAroundKeyword:
   Enabled: true
 
-Layout/SpaceAroundOperators:
+Layout/SpaceBeforeComma:
   Enabled: true
 
-Layout/SpaceBeforeComma:
+Layout/SpaceBeforeComment:
   Enabled: true
 
 Layout/SpaceBeforeFirstArg:
@@ -176,9 +134,6 @@ Style/FrozenStringLiteralComment:
 
 Style/RedundantFreeze:
   Enabled: true
-
-Style/AccessModifierDeclarations:
-  Enabled: false
 
 # Use `foo {}` not `foo{}`.
 Layout/SpaceBeforeBlockBraces:
@@ -205,7 +160,7 @@ Style/StringLiterals:
 Layout/IndentationStyle:
   Enabled: true
 
-# Blank lines should not have any spaces.
+# Empty lines should not have any spaces.
 Layout/TrailingEmptyLines:
   Enabled: true
 
@@ -213,14 +168,8 @@ Layout/TrailingEmptyLines:
 Layout/TrailingWhitespace:
   Enabled: true
 
-Layout/SpaceAroundMethodCallOperator:
-  Enabled: true
-
 # Use quotes for string literals when they are enough.
 Style/RedundantPercentQ:
-  Enabled: true
-
-Lint/DeprecatedOpenSSLConstant:
   Enabled: true
 
 Lint/AmbiguousOperator:
@@ -251,19 +200,16 @@ Lint/UselessAssignment:
 Lint/DeprecatedClassMethods:
   Enabled: true
 
-Lint/AssignmentInCondition:
-  Enabled: false
-
-Lint/RaiseException:
-  Enabled: true
-
-Lint/StructNewOverride:
-  Enabled: true
-
-Style/ExponentialNotation:
+Lint/DeprecatedOpenSSLConstant:
   Enabled: true
 
 Style/ParenthesesAroundCondition:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
   Enabled: true
 
 Style/RedundantBegin:
@@ -277,14 +223,17 @@ Style/Semicolon:
   Enabled: true
   AllowAsExpressionSeparator: true
 
-Style/SlicingWithRange:
-  Enabled: true
-
 # Prefer Foo.method over Foo::method
 Style/ColonMethodCall:
   Enabled: true
 
 Style/TrivialAccessors:
+  Enabled: true
+
+Style/SlicingWithRange:
+  Enabled: true
+
+Style/RedundantRegexpEscape:
   Enabled: true
 
 Performance/FlatMap:
@@ -306,4 +255,10 @@ Performance/ReverseEach:
   Enabled: true
 
 Performance/UnfreezeString:
+  Enabled: true
+
+Performance/DeletePrefix:
+  Enabled: true
+
+Performance/DeleteSuffix:
   Enabled: true
