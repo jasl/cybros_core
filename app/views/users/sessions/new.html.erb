@@ -1,12 +1,12 @@
 <div class="row justify-content-center">
   <div class="col-md-8 col-lg-6">
     <div class="card mx-4">
-      <ul class="nav nav-tabs nav-fill">
-        <li class="c-sidebar-nav-item">
+      <ul class="c-header-nav nav-tabs nav-fill">
+        <li class="c-header-nav-item">
           <%= link_to t("users.sessions.new.title"), new_user_session_path, class: "c-sidebar-nav-link active" %>
         </li>
         <%- if devise_mapping.registerable? %>
-          <li class="c-sidebar-nav-item">
+          <li class="c-header-nav-item">
             <%= link_to t("users.registrations.new.title"), new_user_registration_path, class: "c-sidebar-nav-link" %>
           </li>
         <% end %>

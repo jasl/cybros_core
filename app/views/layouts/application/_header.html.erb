@@ -1,13 +1,13 @@
-<header class="app-header navbar">
+<header class="c-header navbar">
   <% if has_sidebar? %>
-    <button class="navbar-toggler sidebar-toggler d-lg-none" type="button" data-toggle="sidebar-show">
-      <span class="navbar-toggler-icon"></span>
+    <button class="c-header-toggler sidebar-toggler d-lg-none" type="button" data-toggle="sidebar-show">
+      <span class="c-header-toggler-icon"></span>
     </button>
   <% end %>
-  <%= link_to root_path, class: "navbar-brand" do %>
+  <%= link_to root_path, class: "c-header-brand" do %>
     <%= t("layouts.header.brand") %>
   <% end %>
-  <ul class="nav navbar-nav ml-auto">
+  <ul class="c-header-nav navbar-nav ml-auto">
     <li class="c-sidebar-nav-item dropdown">
       <a class="c-sidebar-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
         <%= current_user.email %>
@@ -23,11 +23,11 @@
     </li>
   </ul>
   <% if has_aside? %>
-    <button class="navbar-toggler aside-menu-toggler d-md-down-none" type="button" data-toggle="aside-menu-lg-show">
-      <span class="navbar-toggler-icon"></span>
+    <button class="c-header-toggler aside-menu-toggler d-md-down-none" type="button" data-toggle="aside-menu-lg-show">
+      <span class="c-header-toggler-icon"></span>
     </button>
-    <button class="navbar-toggler aside-menu-toggler d-lg-none" type="button" data-toggle="aside-menu-show">
-      <span class="navbar-toggler-icon"></span>
+    <button class="c-header-toggler aside-menu-toggler d-lg-none" type="button" data-toggle="aside-menu-show">
+      <span class="c-header-toggler-icon"></span>
     </button>
   <% end %>
 </header>

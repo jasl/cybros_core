@@ -84,7 +84,7 @@ a.card-link:hover {
   }
 }
 
-.app-header {
+.c-header {
   padding: $navbar-padding-y $navbar-padding-x;
 
   .dropdown-menu {
@@ -102,7 +102,7 @@ a.card-link:hover {
   @include media-breakpoint-down(md) {
     padding-left: 0;
 
-    .navbar-brand {
+    .c-header-brand {
       position: relative;
       left: auto;
       top: auto;
