@@ -1,11 +1,11 @@
-<div class="sidebar" data-controller="coreui-sidebar">
-  <div class="sidebar-header">
+<div class="c-sidebar" data-controller="coreui-sidebar">
+  <div class="c-sidebar-header">
     <%= link_to root_path, class: "nav-link" do %>
       <i class="fas fa-home"></i>
       <%= t("layouts.sidebar.application.header") %>
     <% end %>
   </div>
-  <nav class="sidebar-nav">
+  <nav class="c-sidebar-nav">
     <ul class="nav">
       <%= nav_item path: 'home#index', html_options: {class: "nav-item"} do %>
         <%= link_to root_path, class: "nav-link" do %>
@@ -15,5 +15,5 @@
       <% end %>
     </ul>
   </nav>
-  <button class="sidebar-minimizer" type="button"></button>
+  <button class="c-sidebar-minimizer" type="button"></button>
 </div>

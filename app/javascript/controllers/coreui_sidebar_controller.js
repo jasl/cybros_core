@@ -1,6 +1,6 @@
 import { Controller } from "stimulus";
 
-const SIDEBAR_MINIMIZER = 'button.sidebar-minimizer';
+const SIDEBAR_MINIMIZER = 'button.c-sidebar-minimizer';
 
 export default class extends Controller {
   connect() {
@@ -9,7 +9,7 @@ export default class extends Controller {
       setTimeout(function(){
         $(SIDEBAR_MINIMIZER).click();
         setTimeout(function(){
-          $('body').addClass('sidebar-minimized');
+          $('body').addClass('c-sidebar-minimized');
         }, 150);
       }, 20);
     }

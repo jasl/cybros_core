@@ -36,63 +36,6 @@ a.card-link:hover {
   }
 }
 
-.nav-tabs .nav-item {
-  z-index: $zindex-nav-tab;
-}
-
-.sidebar {
-  .sidebar-header {
-    margin: 0;
-    padding: 0;
-
-    text-align: left;
-
-    background: $sidebar-bg;
-  }
-
-  .nav {
-    .nav-item.active .nav-link {
-      box-shadow: inset 4px 0 0 $sidebar-nav-link-active-box-color;
-      color: $sidebar-nav-link-active-color;
-      background: $sidebar-nav-link-active-bg;
-
-      .nav-icon {
-        color: $sidebar-nav-link-active-icon-color;
-      }
-    }
-
-    //.nav-item .nav-link {
-    //  .nav-icon {
-    //    font-size: 18px;
-    //  }
-    //}
-  }
-}
-
-body:not(.sidebar-minimized) {
-  .sidebar {
-    .nav {
-      .nav-link {
-        i {
-          width: 50px;
-          height: 45px;
-          margin-top: -($sidebar-nav-link-padding-y + 0.25rem) !important;
-          margin-right: ($sidebar-nav-link-padding-x / 2);
-          margin-bottom: -$sidebar-nav-link-padding-y;
-          margin-left: -$sidebar-nav-link-padding-x;
-          line-height: 45px;
-        }
-      }
-    }
-  }
-}
-
-.sidebar-minimized {
-  .sidebar .nav .nav-dropdown.open {
-    background: transparent;
-  }
-}
-
 .main-header-wrapper {
   margin-bottom: $main-header-margin-bottom;
 

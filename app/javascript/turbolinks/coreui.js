@@ -1,5 +1,5 @@
 document.addEventListener("turbolinks:load", function() {
   // Make coreui toggle happy
-  $('.sidebar').sidebar();
+  $('.c-sidebar').sidebar();
   $('.aside-menu')['aside-menu']();
 });
