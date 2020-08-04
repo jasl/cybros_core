@@ -11,11 +11,7 @@ import "core-js/stable";
 import "regenerator-runtime/runtime";
 import "@stimulus/polyfills";
 
-import JQuery from 'jquery';
-window.$ = window.JQuery = JQuery;
-
-import "bootstrap";
-import "@coreui/coreui"
+import "@coreui/coreui/dist/js/coreui.bundle";
 
 import "stylesheets/application"
 
@@ -24,5 +20,4 @@ require("turbolinks").start()
 //require("@rails/activestorage").start()
 require("channels")
 
-import "turbolinks/coreui";
 import "controllers";

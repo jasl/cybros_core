@@ -1,19 +1,17 @@
-<div class="sidebar" data-controller="coreui-sidebar">
-  <nav class="sidebar-nav">
-    <ul class="nav">
-      <%= nav_item controller: 'admin/home', html_options: { class: "nav-item" } do %>
-        <%= link_to admin_root_path, class: "nav-link" do %>
-          <i class="nav-icon fas fa-tachometer-alt"></i>
-          <%= t("layouts.sidebar.admin.home") %>
-        <% end %>
+<div class="c-sidebar c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
+  <ul class="c-sidebar-nav">
+    <%= nav_item controller: 'admin/home', html_options: {class: "c-sidebar-nav-item"} do %>
+      <%= link_to admin_root_path, class: "c-sidebar-nav-link" do %>
+        <i class="c-sidebar-nav-icon fas fa-tachometer-alt"></i>
+        <%= t("layouts.sidebar.admin.home") %>
       <% end %>
-      <%= nav_item namespace: 'admin/users', html_options: { class: "nav-item" } do %>
-        <%= link_to admin_users_path, class: "nav-link" do %>
-          <i class="nav-icon fas fa-user-circle"></i>
-          <%= t("layouts.sidebar.admin.users") %>
-        <% end %>
+    <% end %>
+    <%= nav_item controller: 'admin/users', html_options: {class: "c-sidebar-nav-item"} do %>
+      <%= link_to admin_users_path, class: "c-sidebar-nav-link" do %>
+        <i class="c-sidebar-nav-icon fas fa-user-circle"></i>
+        <%= t("layouts.sidebar.admin.users") %>
       <% end %>
-    </ul>
-  </nav>
-  <button class="sidebar-minimizer" type="button"></button>
+    <% end %>
+  </ul>
+  <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
 </div>
