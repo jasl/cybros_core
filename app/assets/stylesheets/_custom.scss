@@ -67,23 +67,6 @@ a.card-link:hover {
   }
 }
 
-.aside-menu {
-  .close {
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    color: $body-color;
-    border-top: 0;
-    @include border-radius(0);
-
-    font-size: $font-size-base;
-    font-weight: $font-weight-base;
-    line-height: $line-height-base;
-    margin-bottom: -1px;
-  }
-}
-
 .c-header {
   padding: $navbar-padding-y $navbar-padding-x;
 
@@ -110,8 +93,5 @@ a.card-link:hover {
   }
 }
 
-.aside-menu .nav.nav-tabs {
-  background-color: $gray-200;
-}
 
 // Here you can add other styles

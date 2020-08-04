@@ -1,11 +1,9 @@
-<%- body_class = "c-app header-fixed" %>
-<%- body_class << " c-sidebar-fixed c-sidebar-lg-show" if has_sidebar? %>
-<%- body_class << " aside-menu-fixed" if has_aside? %>
+<%- body_class = "c-app" %>
 <% content_for(:body_class, body_class) %>
 <% content_for :content do %>
+  <%= render_sidebar %>
   <%= render "layouts/application/header" %>
   <div class="c-body">
-    <%= render_sidebar %>
     <main class="c-main">
       <div class="main-header-wrapper">
         <%= render_breadcrumbs %>
