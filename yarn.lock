@@ -834,27 +834,17 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@coreui/coreui-plugin-npm-postinstall@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.npm.taobao.org/@coreui/coreui-plugin-npm-postinstall/download/@coreui/coreui-plugin-npm-postinstall-1.0.2.tgz#6daeb2ec786580d9c0849b05bc3e8d0222d5c463"
-  integrity sha1-ba6y7HhlgNnAhJsFvD6NAiLVxGM=
-
-"@coreui/coreui@2.1.16":
-  version "2.1.16"
-  resolved "https://registry.npm.taobao.org/@coreui/coreui/download/@coreui/coreui-2.1.16.tgz#93efb7d903bcd53092cc4bcc31ef8703de565457"
-  integrity sha1-k++32QO81TCSzEvMMe+HA95WVFc=
-  dependencies:
-    "@coreui/coreui-plugin-npm-postinstall" "^1.0.2"
-    bootstrap "^4.3.1"
-    core-js "^3.3.4"
-    regenerator-runtime "^0.13.3"
+"@coreui/coreui@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.npm.taobao.org/@coreui/coreui/download/@coreui/coreui-3.3.0.tgz#09e6176025cf2c430130218f915a2e448d21c5c6"
+  integrity sha1-CeYXYCXPLEMBMCGPkVouRI0hxcY=
 
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
   resolved "https://registry.npm.taobao.org/@csstools/convert-colors/download/@csstools/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha1-rUldxBsS511YjG24uYNPCPoTHrc=
 
-"@fortawesome/fontawesome-free@5.15.1":
+"@fortawesome/fontawesome-free@^5.15.1":
   version "5.15.1"
   resolved "https://registry.npm.taobao.org/@fortawesome/fontawesome-free/download/@fortawesome/fontawesome-free-5.15.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40fortawesome%2Ffontawesome-free%2Fdownload%2F%40fortawesome%2Ffontawesome-free-5.15.1.tgz#ccfef6ddbe59f8fe8f694783e1d3eb88902dc5eb"
   integrity sha1-zP723b5Z+P6PaUeD4dPriJAtxes=
@@ -866,24 +856,24 @@
   dependencies:
     mkdirp "^1.0.4"
 
-"@rails/actioncable@6.1.0-rc1":
+"@rails/actioncable@^6.1.0-rc1":
   version "6.1.0-rc1"
   resolved "https://registry.npm.taobao.org/@rails/actioncable/download/@rails/actioncable-6.1.0-rc1.tgz#bbb423746d879f99f3670e27a7a759ff25aeabdf"
   integrity sha1-u7QjdG2Hn5nzZw4np6dZ/yWuq98=
 
-"@rails/activestorage@6.1.0-rc1":
+"@rails/activestorage@^6.1.0-rc1":
   version "6.1.0-rc1"
   resolved "https://registry.npm.taobao.org/@rails/activestorage/download/@rails/activestorage-6.1.0-rc1.tgz#59d4ed6a6d48fda5f79207dd22857d3da269e527"
   integrity sha1-WdTtam1I/aX3kgfdIoV9PaJp5Sc=
   dependencies:
     spark-md5 "^3.0.0"
 
-"@rails/ujs@6.1.0-rc1":
+"@rails/ujs@^6.1.0-rc1":
   version "6.1.0-rc1"
   resolved "https://registry.npm.taobao.org/@rails/ujs/download/@rails/ujs-6.1.0-rc1.tgz#d290b7de15c3d4756b3bb993f828b2bb5de0414b"
   integrity sha1-0pC33hXD1HVrO7mT+Ciyu13gQUs=
 
-"@rails/webpacker@5.2.1":
+"@rails/webpacker@^5.2.1":
   version "5.2.1"
   resolved "https://registry.npm.taobao.org/@rails/webpacker/download/@rails/webpacker-5.2.1.tgz#87cdbd4af2090ae2d74bdc51f6f04717d907c5b3"
   integrity sha1-h829SvIJCuLXS9xR9vBHF9kHxbM=
@@ -946,7 +936,7 @@
   dependencies:
     "@stimulus/multimap" "^1.1.1"
 
-"@stimulus/polyfills@1.1.1":
+"@stimulus/polyfills@^1.1.1":
   version "1.1.1"
   resolved "https://registry.npm.taobao.org/@stimulus/polyfills/download/@stimulus/polyfills-1.1.1.tgz#02bacbb8de1ff592200f20a440d382608160b1f5"
   integrity sha1-ArrLuN4f9ZIgDyCkQNOCYIFgsfU=
@@ -1528,7 +1518,7 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.npm.taobao.org/boolbase/download/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
-bootstrap@4.5.3, bootstrap@^4.3.1:
+bootstrap@^4.5.3:
   version "4.5.3"
   resolved "https://registry.npm.taobao.org/bootstrap/download/bootstrap-4.5.3.tgz#c6a72b355aaf323920be800246a6e4ef30997fe6"
   integrity sha1-xqcrNVqvMjkgvoACRqbk7zCZf+Y=
@@ -2109,15 +2099,15 @@ core-js-compat@^3.6.2:
     browserslist "^4.14.6"
     semver "7.0.0"
 
-core-js@3.7.0, core-js@^3.3.4, core-js@^3.6.5:
-  version "3.7.0"
-  resolved "https://registry.npm.taobao.org/core-js/download/core-js-3.7.0.tgz?cache=0&sync_timestamp=1604675690423&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcore-js%2Fdownload%2Fcore-js-3.7.0.tgz#b0a761a02488577afbf97179e4681bf49568520f"
-  integrity sha1-sKdhoCSIV3r7+XF55Ggb9JVoUg8=
-
 core-js@^2.5.3:
   version "2.6.11"
   resolved "https://registry.npm.taobao.org/core-js/download/core-js-2.6.11.tgz?cache=0&sync_timestamp=1604675690423&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcore-js%2Fdownload%2Fcore-js-2.6.11.tgz#38831469f9922bded8ee21c9dc46985e0399308c"
   integrity sha1-OIMUafmSK97Y7iHJ3EaYXgOZMIw=
+
+core-js@^3.6.5, core-js@^3.7.0:
+  version "3.7.0"
+  resolved "https://registry.npm.taobao.org/core-js/download/core-js-3.7.0.tgz?cache=0&sync_timestamp=1604675690423&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcore-js%2Fdownload%2Fcore-js-3.7.0.tgz#b0a761a02488577afbf97179e4681bf49568520f"
+  integrity sha1-sKdhoCSIV3r7+XF55Ggb9JVoUg8=
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -3997,7 +3987,7 @@ jest-worker@^26.5.0:
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
 
-jquery@3.5.1:
+jquery@^3.5.1:
   version "3.5.1"
   resolved "https://registry.npm.taobao.org/jquery/download/jquery-3.5.1.tgz#d7b4d08e1bfdb86ad2f1a3d039ea17304717abb5"
   integrity sha1-17TQjhv9uGrS8aPQOeoXMEcXq7U=
@@ -5113,7 +5103,7 @@ pbkdf2@^3.0.3:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-perfect-scrollbar@1.5.0:
+perfect-scrollbar@^1.5.0:
   version "1.5.0"
   resolved "https://registry.npm.taobao.org/perfect-scrollbar/download/perfect-scrollbar-1.5.0.tgz#821d224ed8ff61990c23f26db63048cdc75b6b83"
   integrity sha1-gh0iTtj/YZkMI/JttjBIzcdba4M=
@@ -5171,7 +5161,7 @@ pnp-webpack-plugin@^1.6.4:
   dependencies:
     ts-pnp "^1.1.6"
 
-popper.js@1.16.1:
+popper.js@^1.16.1:
   version "1.16.1"
   resolved "https://registry.npm.taobao.org/popper.js/download/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
   integrity sha1-KiI8s9x7YhPXQOQDcr5A3kPmWxs=
@@ -6071,7 +6061,7 @@ regenerate@^1.4.0:
   resolved "https://registry.npm.taobao.org/regenerate/download/regenerate-1.4.2.tgz?cache=0&sync_timestamp=1604220147658&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fregenerate%2Fdownload%2Fregenerate-1.4.2.tgz#b9346d8827e8f5a32f7ba29637d398b69014848a"
   integrity sha1-uTRtiCfo9aMve6KWN9OYtpAUhIo=
 
-regenerator-runtime@0.13.7, regenerator-runtime@^0.13.3, regenerator-runtime@^0.13.4, regenerator-runtime@^0.13.7:
+regenerator-runtime@^0.13.4, regenerator-runtime@^0.13.7:
   version "0.13.7"
   resolved "https://registry.npm.taobao.org/regenerator-runtime/download/regenerator-runtime-0.13.7.tgz#cac2dacc8a1ea675feaabaeb8ae833898ae46f55"
   integrity sha1-ysLazIoepnX+qrrriugziYrkb1U=
@@ -6737,7 +6727,7 @@ stdout-stream@^1.4.0:
   dependencies:
     readable-stream "^2.0.1"
 
-stimulus@1.1.1:
+stimulus@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npm.taobao.org/stimulus/download/stimulus-1.1.1.tgz#53c2fded6849e7b85eed3ed8dd76e33abd74bec5"
   integrity sha1-U8L97WhJ57he7T7Y3XbjOr10vsU=
@@ -7128,7 +7118,7 @@ tunnel-agent@^0.6.0:
   dependencies:
     safe-buffer "^5.0.1"
 
-turbolinks@5.2.0:
+turbolinks@^5.2.0:
   version "5.2.0"
   resolved "https://registry.npm.taobao.org/turbolinks/download/turbolinks-5.2.0.tgz#e6877a55ea5c1cb3bb225f0a4ae303d6d32ff77c"
   integrity sha1-5od6VepcHLO7Il8KSuMD1tMv93w=
@@ -7151,7 +7141,7 @@ typedarray@^0.0.6:
   resolved "https://registry.npm.taobao.org/typedarray/download/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@3.9.7:
+typescript@^3.9.7:
   version "3.9.7"
   resolved "https://registry.npm.taobao.org/typescript/download/typescript-3.9.7.tgz#98d600a5ebdc38f40cb277522f12dc800e9e25fa"
   integrity sha1-mNYApevcOPQMsndSLxLcgA6eJfo=
@@ -7406,7 +7396,7 @@ webpack-dev-middleware@^3.7.2:
     range-parser "^1.2.1"
     webpack-log "^2.0.0"
 
-webpack-dev-server@3.11.0:
+webpack-dev-server@^3.11.0:
   version "3.11.0"
   resolved "https://registry.npm.taobao.org/webpack-dev-server/download/webpack-dev-server-3.11.0.tgz#8f154a3bce1bcfd1cc618ef4e703278855e7ff8c"
   integrity sha1-jxVKO84bz9HMYY705wMniFXn/4w=
@@ -7461,7 +7451,7 @@ webpack-sources@^1.0.0, webpack-sources@^1.1.0, webpack-sources@^1.4.0, webpack-
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack@4.44.2, webpack@^4.44.1:
+webpack@^4.44.1, webpack@^4.44.2:
   version "4.44.2"
   resolved "https://registry.npm.taobao.org/webpack/download/webpack-4.44.2.tgz?cache=0&sync_timestamp=1604553127844&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fwebpack%2Fdownload%2Fwebpack-4.44.2.tgz#6bfe2b0af055c8b2d1e90ed2cd9363f841266b72"
   integrity sha1-a/4rCvBVyLLR6Q7SzZNj+EEma3I=

@@ -6,7 +6,7 @@
     "syncyarnlock": "syncyarnlock -s -k && yarn install --check-files"
   },
   "dependencies": {
-    "@coreui/coreui": "~>2.1.16",
+    "@coreui/coreui": "^3.3.0",
     "@fortawesome/fontawesome-free": "^5.15.1",
     "@rails/actioncable": "^6.1.0-rc1",
     "@rails/activestorage": "^6.1.0-rc1",
