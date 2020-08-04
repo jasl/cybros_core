@@ -2,11 +2,11 @@
   <div class="col-md-8 col-lg-6">
     <div class="card mx-4">
       <ul class="nav nav-tabs nav-fill">
-        <li class="nav-item">
+        <li class="c-sidebar-nav-item">
           <%= link_to t("users.sessions.new.title"), new_user_session_path, class: "nav-link active" %>
         </li>
         <%- if devise_mapping.registerable? %>
-          <li class="nav-item">
+          <li class="c-sidebar-nav-item">
             <%= link_to t("users.registrations.new.title"), new_user_registration_path, class: "nav-link" %>
           </li>
         <% end %>
