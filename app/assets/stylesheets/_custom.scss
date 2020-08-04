@@ -48,7 +48,6 @@ a.card-link:hover {
     text-align: left;
 
     background: $sidebar-bg;
-    @include borders($sidebar-header-borders);
   }
 
   .nav {
@@ -56,7 +55,6 @@ a.card-link:hover {
       box-shadow: inset 4px 0 0 $sidebar-nav-link-active-box-color;
       color: $sidebar-nav-link-active-color;
       background: $sidebar-nav-link-active-bg;
-      @include borders($sidebar-nav-link-active-borders);
 
       .nav-icon {
         color: $sidebar-nav-link-active-icon-color;
@@ -83,7 +81,6 @@ body:not(.sidebar-minimized) {
           margin-bottom: -$sidebar-nav-link-padding-y;
           margin-left: -$sidebar-nav-link-padding-x;
           line-height: 45px;
-          color: $sidebar-nav-link-icon-color;
         }
       }
     }
@@ -108,7 +105,6 @@ body:not(.sidebar-minimized) {
     margin-bottom: 0;
     background-color: $action_bar-bg;
     @include border-radius($action_bar-border-radius);
-    @include borders($action_bar-borders);
 
     ol, ul {
       position: relative;
@@ -158,7 +154,6 @@ body:not(.sidebar-minimized) {
     top: 0;
     right: 0;
 
-    padding: $aside-menu-nav-padding-y $aside-menu-nav-padding-x;
     color: $body-color;
     border-top: 0;
     @include border-radius(0);

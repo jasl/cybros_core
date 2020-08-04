@@ -856,6 +856,11 @@
   dependencies:
     mkdirp "^1.0.4"
 
+"@popperjs/core@^2.4.4":
+  version "2.5.4"
+  resolved "https://registry.npm.taobao.org/@popperjs/core/download/@popperjs/core-2.5.4.tgz#de25b5da9f727985a3757fd59b5d028aba75841a"
+  integrity sha1-3iW12p9yeYWjdX/Vm10Cirp1hBo=
+
 "@rails/actioncable@^6.1.0-rc1":
   version "6.1.0-rc1"
   resolved "https://registry.npm.taobao.org/@rails/actioncable/download/@rails/actioncable-6.1.0-rc1.tgz#bbb423746d879f99f3670e27a7a759ff25aeabdf"
@@ -1517,11 +1522,6 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/boolbase/download/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
-
-bootstrap@^4.5.3:
-  version "4.5.3"
-  resolved "https://registry.npm.taobao.org/bootstrap/download/bootstrap-4.5.3.tgz#c6a72b355aaf323920be800246a6e4ef30997fe6"
-  integrity sha1-xqcrNVqvMjkgvoACRqbk7zCZf+Y=
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -5160,11 +5160,6 @@ pnp-webpack-plugin@^1.6.4:
   integrity sha1-yXEaxNxIpoXauvyG+Lbdn434QUk=
   dependencies:
     ts-pnp "^1.1.6"
-
-popper.js@^1.16.1:
-  version "1.16.1"
-  resolved "https://registry.npm.taobao.org/popper.js/download/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
-  integrity sha1-KiI8s9x7YhPXQOQDcr5A3kPmWxs=
 
 portfinder@^1.0.26:
   version "1.0.28"
