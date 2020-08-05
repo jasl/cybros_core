@@ -2,8 +2,9 @@
 <% content_for(:body_class, body_class) %>
 <% content_for :content do %>
   <%= render_sidebar %>
-  <%= render "layouts/application/header" %>
-  <div class="c-wrapper c-fixed-components">
+  <div class="c-wrapper">
+    <%= render "layouts/application/header" %>
+    <%= render_aside %>
     <div class="c-body">
       <main class="c-main">
         <div class="main-header-wrapper">
@@ -15,9 +16,8 @@
           <%= yield %>
         </div>
       </main>
-      <%= render_aside %>
-      <%= render "layouts/application/footer" %>
     </div>
+    <%= render "layouts/application/footer" %>
   </div>
 <% end %>
 
