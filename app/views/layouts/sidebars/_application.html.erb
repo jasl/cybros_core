@@ -1,19 +1,17 @@
-<div class="c-sidebar" data-controller="coreui-sidebar">
-  <div class="c-sidebar-header">
+<div class="c-sidebar c-sidebar-fixed c-sidebar-lg-show" data-controller="coreui-sidebar">
+  <div class="c-sidebar-brand">
     <%= link_to root_path, class: "c-sidebar-nav-link" do %>
       <i class="fas fa-home"></i>
       <%= t("layouts.sidebar.application.header") %>
     <% end %>
   </div>
-  <nav class="c-sidebar-nav">
-    <ul class="nav">
-      <%= nav_item path: 'home#index', html_options: { class: "c-sidebar-nav-item" } do %>
-        <%= link_to root_path, class: "c-sidebar-nav-link" do %>
-          <i class="fas fa-tachometer-alt"></i>
-          <%= t("layouts.sidebar.application.home") %>
-        <% end %>
+  <ul class="c-sidebar-nav">
+    <%= nav_item path: 'home#index', html_options: { class: "c-sidebar-nav-item" } do %>
+      <%= link_to root_path, class: "c-sidebar-nav-link" do %>
+        <i class="fas fa-tachometer-alt"></i>
+        <%= t("layouts.sidebar.application.home") %>
       <% end %>
-    </ul>
-  </nav>
+    <% end %>
+  </ul>
   <button class="c-sidebar-minimizer" type="button"></button>
 </div>
