@@ -1,4 +1,4 @@
-<div class="c-sidebar c-sidebar-fixed c-sidebar-lg-show" data-controller="coreui-sidebar">
+<div class="c-sidebar c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
   <ul class="c-sidebar-nav">
     <%= nav_item controller: 'accounts/profiles', html_options: {class: "c-sidebar-nav-item"} do %>
       <%= link_to account_profile_path, class: "c-sidebar-nav-link" do %>
@@ -13,5 +13,5 @@
       <% end %>
     <% end %>
   </ul>
-  <button class="c-sidebar-minimizer" type="button"></button>
+  <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
 </div>
