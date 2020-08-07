@@ -4,11 +4,9 @@ module Accounts
   class ProfilesController < Accounts::ApplicationController
     before_action :set_user
 
-    # GET /account/profile
     def show
     end
 
-    # PUT /account/profile
     def update
       if @user.update_without_password(user_params)
         redirect_to after_update_url, notice: t("accounts.profiles.show.updated")

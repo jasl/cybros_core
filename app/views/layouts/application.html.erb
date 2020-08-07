@@ -5,10 +5,10 @@
   <div class="c-wrapper">
     <%= render "layouts/application/header" %>
     <div class="c-body">
+      <div class="main-header-wrapper">
+        <%= render "layouts/application/notice" %>
+      </div>
       <main class="c-main">
-        <div class="main-header-wrapper">
-          <%= render "layouts/application/notice" %>
-        </div>
         <div class="container-fluid" id="main">
           <%= yield %>
         </div>
