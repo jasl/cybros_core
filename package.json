@@ -14,7 +14,6 @@
     "@rails/webpacker": "^5.2.1",
     "@stimulus/polyfills": "^1.1.1",
     "core-js": "^3.7.0",
-    "jquery": "^3.5.1",
     "perfect-scrollbar": "^1.5.0",
     "@popperjs/core": "^2.4.4",
     "regenerator-runtime": "^0.13.7",
