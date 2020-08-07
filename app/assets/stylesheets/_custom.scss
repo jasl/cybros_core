@@ -18,53 +18,6 @@ a.card-link:hover {
   .alert {
     padding: $main-header-padding-y $main-header-padding-x;
   }
-
-  .action_bar {
-    padding: $action_bar-padding-y $action_bar-padding-x;
-    margin-bottom: 0;
-    background-color: $action_bar-bg;
-    @include border-radius($action_bar-border-radius);
-
-    ol, ul {
-      position: relative;
-      display: flex;
-      flex-wrap: wrap;
-      list-style: none;
-
-      margin: 0;
-      padding: 0;
-    }
-
-    .btn-group {
-      vertical-align: top;
-    }
-
-    .btn {
-      padding: 0 $input-btn-padding-x;
-      vertical-align: top;
-      border: 0;
-
-      &:hover,
-      &.active {
-        color: $body-color;
-        background: transparent;
-      }
-    }
-
-    .action_bar-item {
-      // The separator between breadcrumbs (by default, a forward-slash: "/")
-      + .action_bar-item {
-        padding-left: $action_bar-item-padding;
-
-        &::before {
-          display: inline-block; // Suppress underlining of the separator in modern browsers
-          padding-right: $action_bar-item-padding;
-          color: $action_bar-divider-color;
-          content: $action_bar-divider;
-        }
-      }
-    }
-  }
 }
 
 .c-header {

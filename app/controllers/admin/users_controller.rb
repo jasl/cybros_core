@@ -2,7 +2,7 @@
 
 class Admin::UsersController < Admin::ApplicationController
   before_action :set_user, only: %i[show edit update lock unlock resend_confirmation_mail resend_invitation_mail]
-  before_action :set_breadcrumbs, only: %i[new edit create update], if: -> { request.format.html? }
+  # before_action :set_breadcrumbs, only: %i[new edit create update], if: -> { request.format.html? }
 
   def index
     prepare_meta_tags title: t(".title")
