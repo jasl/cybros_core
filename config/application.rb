@@ -39,6 +39,9 @@ module CybrosCore
       g.test_framework nil
     end
 
+    # Store uploaded files on the local file system (see config/storage.yml for options).
+    # config.active_storage.service = Rails.env.to_sym
+
     overrides = "#{Rails.root}/app/overrides"
     Rails.autoloaders.main.ignore(overrides)
     config.to_prepare do
