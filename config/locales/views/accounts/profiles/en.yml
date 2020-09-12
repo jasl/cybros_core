@@ -9,3 +9,6 @@ en:
           email:
             title: "Email"
             description: "After a successful email update, you should use new email on next log in."
+          time_zone:
+            title: "Time zone"
+            description: "After a successful time zone update, the time will be shown in correct time zone"

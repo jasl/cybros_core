@@ -9,3 +9,6 @@ zh-CN:
           email:
             title: "邮箱"
             description: "这些信息会影响到下一次登录，并且不能和其他用户的重复"
+          time_zone:
+            title: "时区"
+            description: "这个选项会影响显示的时间的时区"

@@ -24,7 +24,7 @@ module Accounts
       end
 
       def user_params
-        params.require(:user).permit(:email, :full_name)
+        params.require(:user).permit(:email, :full_name, :time_zone)
       end
 
       def after_update_url

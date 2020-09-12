@@ -9,6 +9,12 @@
           <p class="text-muted">
             <%= t(".section.email.description") %>
           </p>
+          <h5>
+            <%= t(".section.time_zone.title") %>
+          </h5>
+          <p class="text-muted">
+            <%= t(".section.time_zone.description") %>
+          </p>
         </div>
         <div class="col-lg-8">
           <%= form_with(model: @user, url: account_profile_path, html: {method: :put}, local: true) do |f| %>
@@ -16,6 +22,11 @@
               <%= f.label :email %>
               <%= f.email_field :email, id: "user_email", autofocus: true, required: "required", class: "form-control", class_for_error: "is-invalid" %>
               <%= f.error_message :email, class: "invalid-feedback" %>
+            </div>
+            <div class="form-group text-left">
+              <%= f.label :time_zone %>
+              <%= f.select :time_zone, ActiveSupport::TimeZone::MAPPING.sort, {}, id: "user_time_zone", autofocus: true, required: "required", class: "form-control", class_for_error: "is-invalid" %>
+              <%= f.error_message :time_zone, class: "invalid-feedback" %>
             </div>
 
             <%= f.submit t(".submit"), class: "btn btn-block btn-primary" %>

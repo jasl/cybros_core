@@ -2,6 +2,7 @@
 
 class ApplicationController < ActionController::Base
   before_action :prepare_meta_tags, if: -> { request.format.html? }
+  before_action :set_time_zone
 
   include StoreLocation
 
@@ -55,5 +56,10 @@ class ApplicationController < ActionController::Base
         redirect_to #{s}_url
       end
       RUBY_EVAL
+    end
+
+  private
+    def set_time_zone
+      Time.zone = current_user.time_zone if current_user&.time_zone&.present?
     end
 end
