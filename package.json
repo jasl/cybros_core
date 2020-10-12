@@ -8,9 +8,9 @@
   "dependencies": {
     "@coreui/coreui": "~>2.1.16",
     "@fortawesome/fontawesome-free": "^5.14.0",
-    "@rails/actioncable": "^6.0.3-2",
-    "@rails/activestorage": "^6.0.3-2",
-    "@rails/ujs": "^6.0.3-2",
+    "@rails/actioncable": "^6.0.3-4",
+    "@rails/activestorage": "^6.0.3-4",
+    "@rails/ujs": "^6.0.3-4",
     "@rails/webpacker": "^5.2.1",
     "@stimulus/polyfills": "^1.1.1",
     "bootstrap": "^4.5.2",
