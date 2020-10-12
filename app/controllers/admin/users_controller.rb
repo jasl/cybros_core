@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Admin::UsersController < Admin::ApplicationController
-  before_action :set_user, only: %i[show edit update lock unlock resend_confirmation_mail resend_invitation_mail]
+  before_action :set_user, only: %i[show edit update lock unlock resend_confirmation_mail resend_invitation_mail direct_confirm]
   # before_action :set_breadcrumbs, only: %i[new edit create update], if: -> { request.format.html? }
 
   def index
@@ -75,6 +75,11 @@ class Admin::UsersController < Admin::ApplicationController
     end
 
     redirect_to admin_user_url(@user), notice: t(".shared.notice.sent_confirmation_mail")
+  end
+
+  def direct_confirm
+    @user.confirm
+    redirect_to admin_user_url(@user), notice: t(".shared.notice.user_direct_confirmed")
   end
 
   private

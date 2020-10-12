@@ -15,6 +15,7 @@ en:
           created: "User created"
           sent_confirmation_mail: "Confirmation mail sent"
           sent_invitation_mail: "Invitation mail sent"
+          user_direct_confirmed: "User confirmed"
         confirmation:
           lock: "Are you sure lock the user?"
           unlock: "Are you sure unlock the user?"
@@ -37,6 +38,7 @@ en:
           unlock: "Unlock"
           resend_confirmation_mail: "Resend confirmation mail"
           resend_invitation_mail: "Resend invitation mail"
+          direct_confirm: "Direct confirm"
         email: "Email"
         created_at: "Created at"
         current_sign_in_at: "Current sign in at"
