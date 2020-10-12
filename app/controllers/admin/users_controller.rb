@@ -38,7 +38,10 @@ class Admin::UsersController < Admin::ApplicationController
 
   def update
     if @user.update_without_password(user_params)
-      redirect_to admin_user_url(@user), notice: t(".shared.notice.updated")
+      respond_to do |format|
+        format.html { redirect_to admin_user_path(@user), notice: t(".shared.notice.updated") }
+        format.js { render }
+      end
     else
       prepare_meta_tags title: t("admin.users.edit.title")
       render :edit

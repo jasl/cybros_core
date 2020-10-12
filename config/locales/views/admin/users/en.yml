@@ -32,6 +32,10 @@ en:
           status: "Status"
           actions:
             show: "Show"
+      tr_form:
+        actions:
+          show: "Show"
+          save: "Save"
       show:
         actions:
           lock: "Lock"

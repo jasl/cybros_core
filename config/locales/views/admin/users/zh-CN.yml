@@ -32,6 +32,10 @@ zh-CN:
           status: "状态"
           actions:
             show: "查看"
+      tr_form:
+        actions:
+          show: "查看"
+          save: "保存"
       show:
         actions:
           lock: "禁用"
