@@ -10,6 +10,9 @@
       <li class="action_bar-item">
         <%= link_to t(".actions.resend_confirmation_mail"), resend_confirmation_mail_admin_user_path(@user), method: :patch, class: "btn text-primary" %>
       </li>
+      <li class="action_bar-item">
+        <%= link_to t(".actions.direct_confirm"), direct_confirm_admin_user_path(@user), method: :patch, class: "btn text-primary" %>
+      </li>
     <% end %>
     <% if @user.created_by_invite? && !@user.invited_to_sign_up? %>
       <li class="action_bar-item">

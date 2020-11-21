@@ -15,6 +15,7 @@ zh-CN:
           created: "用户创建成功"
           sent_confirmation_mail: "激活邮件已发送"
           sent_invitation_mail: "邀请邮件已发送"
+          user_direct_confirmed: "用户已激活"
         confirmation:
           lock: "确定要禁用该用户吗？"
           unlock: "确定要恢复该用户吗？"
@@ -31,12 +32,17 @@ zh-CN:
           status: "状态"
           actions:
             show: "查看"
+      tr_form:
+        actions:
+          show: "查看"
+          save: "保存"
       show:
         actions:
           lock: "禁用"
           unlock: "启用"
           resend_confirmation_mail: "重发激活邮件"
           resend_invitation_mail: "重发邀请邮件"
+          direct_confirm: "直接激活"
         email: "邮箱"
         created_at: "创建于"
         current_sign_in_at: "最后登录"

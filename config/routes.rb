@@ -15,6 +15,7 @@ Rails.application.routes.draw do
         patch :unlock
         patch :resend_confirmation_mail
         patch :resend_invitation_mail
+        patch :direct_confirm
       end
     end
   end

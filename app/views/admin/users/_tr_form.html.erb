@@ -1,0 +1,37 @@
+<%= form_with model: user, url: admin_user_path(user) do |f| %>
+  <td><%= user.id %></td>
+  <td class="py-1"><%= f.text_field :email, class: 'form-control' -%></td>
+  <td><%= time_tag user.created_at %></td>
+  <td><%= time_tag user.current_sign_in_at if user.current_sign_in_at %></td>
+  <td>
+    <% if user.admin? %>
+        <span class="badge badge-success">
+          <%= t("admin.users.shared.status.admin") %>
+        </span>
+    <% end %>
+    <% unless user.confirmed? %>
+        <span class="badge badge-warning">
+          <%= t("admin.users.shared.status.pending_confirmation") %>
+        </span>
+    <% end %>
+    <% if user.pending_reconfirmation? %>
+        <span class="badge badge-warning">
+          <%= t("admin.users.shared.status.pending_reconfirmation") %>
+        </span>
+    <% end %>
+    <% if user.created_by_invite? && !user.invited_to_sign_up? %>
+        <span class="badge badge-warning">
+          <%= t("admin.users.shared.status.inviting") %>
+        </span>
+    <% end %>
+    <% if user.access_locked? %>
+        <span class="badge badge-danger">
+          <%= t("admin.users.shared.status.locked") %>
+        </span>
+    <% end %>
+  </td>
+  <td>
+    <%= link_to t(".table.actions.show"), admin_user_path(user) %>
+    <%= f.submit t(".actions.save"), class: "btn btn-sm btn-outline-primary" -%>
+  </td>
+<% end %>

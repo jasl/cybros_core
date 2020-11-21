@@ -33,41 +33,8 @@
           </thead>
           <tbody>
           <% @users.each do |user| %>
-            <tr>
-              <td><%= user.id %></td>
-              <td><%= user.email %></td>
-              <td><%= time_tag user.created_at %></td>
-              <td><%= time_tag user.current_sign_in_at if user.current_sign_in_at %></td>
-              <td>
-                <% if user.admin? %>
-                    <span class="badge badge-success">
-                      <%= t("admin.users.shared.status.admin") %>
-                    </span>
-                <% end %>
-                <% unless user.confirmed? %>
-                    <span class="badge badge-warning">
-                      <%= t("admin.users.shared.status.pending_confirmation") %>
-                    </span>
-                <% end %>
-                <% if user.pending_reconfirmation? %>
-                    <span class="badge badge-warning">
-                      <%= t("admin.users.shared.status.pending_reconfirmation") %>
-                    </span>
-                <% end %>
-                <% if user.created_by_invite? && !user.invited_to_sign_up? %>
-                    <span class="badge badge-warning">
-                      <%= t("admin.users.shared.status.inviting") %>
-                    </span>
-                <% end %>
-                <% if user.access_locked? %>
-                    <span class="badge badge-danger">
-                      <%= t("admin.users.shared.status.locked") %>
-                    </span>
-                <% end %>
-              </td>
-              <td>
-                <%= link_to t(".table.actions.show"), admin_user_path(user) %>
-              </td>
+            <tr id="admin-user-<%= user.id -%>">
+              <%= render partial: 'tr_form', locals: { user: user } -%>
             </tr>
           <% end %>
           </tbody>
