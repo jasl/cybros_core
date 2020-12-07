@@ -12,7 +12,7 @@ gem "rails-i18n"
 gem "pg", ">= 0.18", "< 2.0"
 
 # Use Puma as the app server
-gem "puma", "~> 4.3.5"
+gem "puma", "~> 5.0"
 # Use development version of Webpacker
 gem "webpacker", "~> 5.0"
 

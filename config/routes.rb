@@ -10,6 +10,10 @@ Rails.application.routes.draw do
     root to: "home#index"
 
     resources :users, except: %i[destroy] do
+      collection do
+        resources :invitations, only: %i[new create], module: :users
+      end
+
       member do
         patch :lock
         patch :unlock
@@ -19,26 +23,26 @@ Rails.application.routes.draw do
     end
   end
 
+  devise_scope :user do
+    namespace :users, as: "user" do
+      resource :registration,
+               only: %i[new create],
+               path: "",
+               path_names: { new: "sign_up" }
+
+      resource :invitation,
+               path: "invitation" do
+        get :edit, path: "accept", as: :accept
+        get :destroy, path: "remove", as: :remove
+      end
+    end
+  end
+
   devise_for :users, skip: %i[registrations invitations], controllers: {
     confirmations: "users/confirmations",
     passwords: "users/passwords",
     sessions: "users/sessions"
   }
-
-  devise_scope :user do
-    resource :registrations,
-             only: %i[new create],
-             path: "users",
-             path_names: { new: "sign_up" },
-             controller: "users/registrations",
-             as: :user_registration
-
-    resource :invitations,
-             only: %i[edit update],
-             path: "users",
-             controller: "users/invitations",
-             as: :user_invitations
-  end
 
   get "users", to: redirect("/users/sign_up")
 

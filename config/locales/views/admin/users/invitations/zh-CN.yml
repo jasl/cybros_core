@@ -1,0 +1,9 @@
+zh-CN:
+  admin:
+    users:
+      invitations:
+        shared:
+          notice:
+            created: "邀请已发送"
+        new:
+          title: "邀请用户"

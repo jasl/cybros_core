@@ -1,0 +1,9 @@
+<%= form_with(model: user, url: admin_invitations_path, method: :post, local: true) do |f| %>
+  <div class="form-group">
+    <%= f.label :email %>
+    <%= f.email_field :email, id: "user_email", autofocus: true, required: "required", class: "form-control", class_for_error: "is-invalid" %>
+    <%= f.error_message :email, class: "invalid-feedback" %>
+  </div>
+
+  <%= f.submit t("shared.form.submit.create"), class: "btn btn-block btn-primary" %>
+<% end %>

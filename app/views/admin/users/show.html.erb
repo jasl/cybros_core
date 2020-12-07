@@ -6,14 +6,13 @@
     <li class="action_bar-item">
       <%= link_to t("shared.actions.edit"), edit_admin_user_path(@user), class: "btn text-primary" %>
     </li>
-    <% if !@user.confirmed? || @user.pending_reconfirmation? %>
-      <li class="action_bar-item">
-        <%= link_to t(".actions.resend_confirmation_mail"), resend_confirmation_mail_admin_user_path(@user), method: :patch, class: "btn text-primary" %>
-      </li>
-    <% end %>
-    <% if @user.created_by_invite? && !@user.invited_to_sign_up? %>
+    <% if @user.created_by_invite? && !@user.invitation_accepted? %>
       <li class="action_bar-item">
         <%= link_to t(".actions.resend_invitation_mail"), resend_invitation_mail_admin_user_path(@user), method: :patch, class: "btn text-primary" %>
+      </li>
+    <% elsif !@user.confirmed? || @user.pending_reconfirmation? %>
+      <li class="action_bar-item">
+        <%= link_to t(".actions.resend_confirmation_mail"), resend_confirmation_mail_admin_user_path(@user), method: :patch, class: "btn text-primary" %>
       </li>
     <% end %>
     <% unless @user == current_user %>
@@ -51,9 +50,9 @@
         </dt>
         <dd class="col-sm-9">
           <% if @user.admin? %>
-              <span class="badge badge-success">
-                <%= t("admin.users.shared.status.admin") %>
-              </span>
+            <span class="badge badge-success">
+              <%= t("admin.users.shared.status.admin") %>
+            </span>
           <% end %>
           <% unless @user.confirmed? %>
               <span class="badge badge-warning">
@@ -61,19 +60,19 @@
               </span>
           <% end %>
           <% if @user.pending_reconfirmation? %>
-              <span class="badge badge-warning">
-                <%= t("admin.users.shared.status.pending_reconfirmation") %>
-              </span>
+            <span class="badge badge-warning">
+              <%= t("admin.users.shared.status.pending_reconfirmation") %>
+            </span>
           <% end %>
-          <% if @user.created_by_invite? && !@user.invited_to_sign_up? %>
-              <span class="badge badge-warning">
-                <%= t("admin.users.shared.status.inviting") %>
-              </span>
+          <% if @user.created_by_invite? && !@user.invitation_accepted? %>
+            <span class="badge badge-warning">
+              <%= t("admin.users.shared.status.inviting") %>
+            </span>
           <% end %>
           <% if @user.access_locked? %>
-              <span class="badge badge-danger">
-                <%= t("admin.users.shared.status.locked") %>
-              </span>
+            <span class="badge badge-danger">
+              <%= t("admin.users.shared.status.locked") %>
+            </span>
           <% end %>
           &nbsp;
         </dd>

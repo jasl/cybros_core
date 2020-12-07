@@ -22,6 +22,7 @@ zh-CN:
         title: "用户管理"
         actions:
           new: "新建用户"
+          invite: "邀请用户"
           search: "搜索"
         table:
           id: "Id"
@@ -41,6 +42,11 @@ zh-CN:
         created_at: "创建于"
         current_sign_in_at: "最后登录"
         status: "状态"
+        memberships: "加入的组织"
+        table:
+          tenant: "租户"
+          role: "角色"
+          created_at: "创建于"
       new:
         title: "新建用户"
       edit:

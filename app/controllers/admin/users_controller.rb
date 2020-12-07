@@ -70,11 +70,11 @@ class Admin::UsersController < Admin::ApplicationController
   end
 
   def resend_invitation_mail
-    if @user.created_by_invite? && !@user.invited_to_sign_up?
+    if @user.created_by_invite? && !@user.invitation_accepted?
       @user.deliver_invitation
     end
 
-    redirect_to admin_user_url(@user), notice: t(".shared.notice.sent_confirmation_mail")
+    redirect_to admin_user_url(@user), notice: t(".shared.notice.sent_invitation_mail")
   end
 
   private

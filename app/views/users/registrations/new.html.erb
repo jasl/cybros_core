@@ -4,11 +4,11 @@
       <ul class="nav nav-tabs nav-fill">
         <%- if devise_mapping.database_authenticatable? %>
           <li class="nav-item">
-            <%= link_to t("users.sessions.new.title"), new_user_session_path, class: "nav-link" %>
+            <%= link_to t("users.sessions.new.title"), new_session_path(resource_name), class: "nav-link" %>
           </li>
         <% end %>
         <li class="nav-item">
-          <%= link_to t("users.registrations.new.title"), new_user_registration_path, class: "nav-link active" %>
+          <%= link_to t("users.registrations.new.title"), new_registration_path(resource_name), class: "nav-link active" %>
         </li>
       </ul>
 
@@ -39,8 +39,8 @@
   </div>
 </div>
 
-<%#- if devise_mapping.confirmable? %>
-<!--  <div class="block text-center">-->
-    <%#= link_to t(".didn_t_receive_confirmation_instructions"), new_confirmation_path(resource_name) %>
-<!--  </div>-->
-<%# end -%>
+<%- if devise_mapping.confirmable? %>
+  <div class="block text-center">
+    <%= link_to t(".didn_t_receive_confirmation_instructions"), new_confirmation_path(resource_name) %>
+  </div>
+<% end -%>

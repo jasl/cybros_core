@@ -1,0 +1,9 @@
+en:
+  admin:
+    users:
+      invitations:
+        shared:
+          notice:
+            created: "Invitation created"
+        new:
+          title: "New Invitation"

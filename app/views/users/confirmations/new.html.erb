@@ -6,7 +6,7 @@
           <%= t(".title") %>
         </h5>
 
-        <%= form_with(model: resource, as: resource_name, url: password_path(resource_name), local: true) do |f| %>
+        <%= form_with(model: resource, as: resource_name, url: confirmation_path(resource_name), local: true) do |f| %>
           <div class="form-group">
             <%= f.label :email %>
             <%= f.email_field :email, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email), id: "user_email", autofocus: true, required: "required", class: "form-control", class_for_error: "is-invalid" %>

@@ -22,9 +22,11 @@ en:
         title: "User Management"
         actions:
           new: "New User"
+          invite: "Invite"
           search: "Search"
         table:
           id: "Id"
+          uid: "UID"
           email: "Email"
           created_at: "Created at"
           current_sign_in_at: "Current sign in at"
@@ -38,9 +40,17 @@ en:
           resend_confirmation_mail: "Resend confirmation mail"
           resend_invitation_mail: "Resend invitation mail"
         email: "Email"
+        uid: "UID"
+        phone: "Phone"
+        name: "Full name"
         created_at: "Created at"
         current_sign_in_at: "Current sign in at"
         status: "Status"
+        memberships: "Memberships"
+        table:
+          tenant: "Tenant"
+          role: "Role"
+          created_at: "Created at"
       new:
         title: "New User"
       edit:

@@ -2,6 +2,7 @@
   <ol>
     <li class="action_bar-item">
       <%= link_to t(".actions.new"), new_admin_user_path, class: "btn text-primary" %>
+      <%= link_to t(".actions.invite"), new_admin_invitation_path, class: "btn text-primary" %>
     </li>
   </ol>
 <% end %>
@@ -12,13 +13,15 @@
       <h3 class="page-title">
         <%= t(".title") %>
       </h3>
-      <%= form_tag admin_users_path, method: :get, class: 'form-inline' do -%>
-        <div class="form-group">
-          <label class="mr-1" for="text-user-name"><%= t(".table.email") -%>：</label>
-          <%= text_field_tag 'user_email', params[:user_email], class: 'form-control', id: 'text-user-name' %>
-        </div>
-        <div><%= submit_tag t(".actions.search"), class: 'btn btn-primary' %></div>
-      <% end -%>
+      <p>
+        <%= form_tag admin_users_path, method: :get, class: 'form-inline' do -%>
+          <div class="form-group">
+            <label class="mr-2" for="text-user-name"><%= t(".table.email") -%></label>
+            <%= text_field_tag 'user_email', params[:user_email], class: 'form-control mr-2', id: 'text-user-name' %>
+          </div>
+          <div><%= submit_tag t(".actions.search"), class: 'btn btn-primary' %></div>
+        <% end -%>
+      </p>
       <div class="table-responsive">
         <table class="table table-striped">
           <thead>
@@ -45,24 +48,24 @@
                     </span>
                 <% end %>
                 <% unless user.confirmed? %>
-                    <span class="badge badge-warning">
-                      <%= t("admin.users.shared.status.pending_confirmation") %>
-                    </span>
+                  <span class="badge badge-warning">
+                    <%= t("admin.users.shared.status.pending_confirmation") %>
+                  </span>
                 <% end %>
                 <% if user.pending_reconfirmation? %>
-                    <span class="badge badge-warning">
-                      <%= t("admin.users.shared.status.pending_reconfirmation") %>
-                    </span>
+                  <span class="badge badge-warning">
+                    <%= t("admin.users.shared.status.pending_reconfirmation") %>
+                  </span>
                 <% end %>
-                <% if user.created_by_invite? && !user.invited_to_sign_up? %>
-                    <span class="badge badge-warning">
-                      <%= t("admin.users.shared.status.inviting") %>
-                    </span>
+                <% if user.created_by_invite? && !user.invitation_accepted? %>
+                  <span class="badge badge-warning">
+                    <%= t("admin.users.shared.status.inviting") %>
+                  </span>
                 <% end %>
                 <% if user.access_locked? %>
-                    <span class="badge badge-danger">
-                      <%= t("admin.users.shared.status.locked") %>
-                    </span>
+                  <span class="badge badge-danger">
+                    <%= t("admin.users.shared.status.locked") %>
+                  </span>
                 <% end %>
               </td>
               <td>
