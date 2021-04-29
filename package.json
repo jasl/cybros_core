@@ -19,7 +19,7 @@
     "perfect-scrollbar": "^1.5.0",
     "popper.js": "^1.16.1",
     "regenerator-runtime": "^0.13.7",
-    "stimulus": "^1.1.1",
+    "stimulus": "^2.0.0",
     "turbolinks": "^5.2.0"
   },
   "devDependencies": {
