@@ -44,7 +44,7 @@ I do these:
 - `resolved_paths: ['app/assets']` in `config/webpacker.yml`
 - `app/javascript/packs/application.js` require all static assets (images, webfonts, etc.)
 
-#### CoreUI with Bootstrap, FontAwesome
+#### CoreUI 3 (Bootstrap included), FontAwesome
 
 See `app/assets/stylesheets/application.scss`
 

@@ -12,165 +12,15 @@ a.card-link:hover {
   }
 }
 
-.card .nav.nav-tabs {
-  .nav-link {
-    margin-left: -1px;
-    margin-right: -1px;
-
-    font-size: 1.25em;
-
-    &.active {
-      font-weight: bold;
-    }
-
-    &:not(.active) {
-      margin-top: -1px;
-      border-top: 2px solid $border-color;
-      background: $gray-100;
-
-      &:hover {
-        color: $gray-800;
-        border-color: $border-color;
-      }
-    }
-  }
-}
-
-.nav-tabs .nav-item {
-  z-index: $zindex-nav-tab;
-}
-
-.sidebar {
-  .sidebar-header {
-    margin: 0;
-    padding: 0;
-
-    text-align: left;
-
-    background: $sidebar-bg;
-    @include borders($sidebar-header-borders);
-  }
-
-  .nav {
-    .nav-item.active .nav-link {
-      box-shadow: inset 4px 0 0 $sidebar-nav-link-active-box-color;
-      color: $sidebar-nav-link-active-color;
-      background: $sidebar-nav-link-active-bg;
-      @include borders($sidebar-nav-link-active-borders);
-
-      .nav-icon {
-        color: $sidebar-nav-link-active-icon-color;
-      }
-    }
-
-    //.nav-item .nav-link {
-    //  .nav-icon {
-    //    font-size: 18px;
-    //  }
-    //}
-  }
-}
-
-body:not(.sidebar-minimized) {
-  .sidebar {
-    .nav {
-      .nav-link {
-        i {
-          width: 50px;
-          height: 45px;
-          margin-top: -($sidebar-nav-link-padding-y + 0.25rem) !important;
-          margin-right: ($sidebar-nav-link-padding-x / 2);
-          margin-bottom: -$sidebar-nav-link-padding-y;
-          margin-left: -$sidebar-nav-link-padding-x;
-          line-height: 45px;
-          color: $sidebar-nav-link-icon-color;
-        }
-      }
-    }
-  }
-}
-
-.sidebar-minimized {
-  .sidebar .nav .nav-dropdown.open {
-    background: transparent;
-  }
-}
-
 .main-header-wrapper {
   margin-bottom: $main-header-margin-bottom;
 
   .alert {
     padding: $main-header-padding-y $main-header-padding-x;
   }
-
-  .action_bar {
-    padding: $action_bar-padding-y $action_bar-padding-x;
-    margin-bottom: 0;
-    background-color: $action_bar-bg;
-    @include border-radius($action_bar-border-radius);
-    @include borders($action_bar-borders);
-
-    ol, ul {
-      position: relative;
-      display: flex;
-      flex-wrap: wrap;
-      list-style: none;
-
-      margin: 0;
-      padding: 0;
-    }
-
-    .btn-group {
-      vertical-align: top;
-    }
-
-    .btn {
-      padding: 0 $input-btn-padding-x;
-      vertical-align: top;
-      border: 0;
-
-      &:hover,
-      &.active {
-        color: $body-color;
-        background: transparent;
-      }
-    }
-
-    .action_bar-item {
-      // The separator between breadcrumbs (by default, a forward-slash: "/")
-      + .action_bar-item {
-        padding-left: $action_bar-item-padding;
-
-        &::before {
-          display: inline-block; // Suppress underlining of the separator in modern browsers
-          padding-right: $action_bar-item-padding;
-          color: $action_bar-divider-color;
-          content: $action_bar-divider;
-        }
-      }
-    }
-  }
 }
 
-.aside-menu {
-  .close {
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    padding: $aside-menu-nav-padding-y $aside-menu-nav-padding-x;
-    color: $body-color;
-    border-top: 0;
-    @include border-radius(0);
-
-    font-size: $font-size-base;
-    font-weight: $font-weight-base;
-    line-height: $line-height-base;
-    margin-bottom: -1px;
-  }
-}
-
-.app-header {
+.c-header {
   padding: $navbar-padding-y $navbar-padding-x;
 
   .dropdown-menu {
@@ -188,7 +38,7 @@ body:not(.sidebar-minimized) {
   @include media-breakpoint-down(md) {
     padding-left: 0;
 
-    .navbar-brand {
+    .c-header-brand {
       position: relative;
       left: auto;
       top: auto;
@@ -196,8 +46,5 @@ body:not(.sidebar-minimized) {
   }
 }
 
-.aside-menu .nav.nav-tabs {
-  background-color: $gray-200;
-}
 
 // Here you can add other styles

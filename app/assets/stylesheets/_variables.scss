@@ -1,4 +1,4 @@
-@import "~bootstrap/scss/functions";
+@import "~@coreui/coreui/scss/functions";
 
 // Overrides CoreUI & Bootstrap Variables
 
@@ -88,26 +88,6 @@ $breadcrumb-margin-bottom:        0;
 $breadcrumb-divider-color:        $gray-600;
 $breadcrumb-active-color:         $gray-600;
 
-// Action bar
-
-$action_bar-borders: (
-  bottom: (
-    size:                         1px,
-    style:                        solid,
-    color:                        $border-color
-  )
-);
-
-$action_bar-padding-y:            $main-header-padding-y;
-$action_bar-padding-x:            $main-header-padding-x;
-$action_bar-item-padding:         .5rem;
-
-$action_bar-bg:                   $gray-100;
-$action_bar-divider-color:        $gray-600;
-$action_bar-divider:              quote("|");
-
-$action_bar-border-radius:        $border-radius;
-
 // Cards
 
 $card-border-color:               $gray-300;
@@ -172,13 +152,6 @@ $sidebar-borders: (
     color:                          $border-color
   )
 );
-$sidebar-header-borders: (
-  bottom: (
-    size:                             1px,
-    style:                            solid,
-    color:                            $border-color
-  )
-) !default;
 
 // Sidebar Navigation
 
