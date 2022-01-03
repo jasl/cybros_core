@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "syncyarnlock": "syncyarnlock -s -k && yarn install --check-files"
+    "syncyarnlock": "syncyarnlock -s -k && yarn install --check-files",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
@@ -16,8 +17,10 @@
     "bootstrap": "^4.6.1",
     "core-js": "^3.19.3",
     "jquery": "^3.6.0",
+    "patch-package": "^6.4.7",
     "perfect-scrollbar": "^1.5.3",
     "popper.js": "^1.16.1",
+    "postinstall-postinstall": "^2.1.0",
     "regenerator-runtime": "^0.13.9",
     "stimulus": "^2.0.0",
     "turbolinks": "^5.2.0"
