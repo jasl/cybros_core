@@ -1,3 +1,4 @@
+@use "sass:math";
 @import "variables";
 
 // Custom styles for this template
@@ -79,7 +80,7 @@ body:not(.sidebar-minimized) {
           width: 50px;
           height: 45px;
           margin-top: -($sidebar-nav-link-padding-y + 0.25rem) !important;
-          margin-right: ($sidebar-nav-link-padding-x / 2);
+          margin-right: math.div($sidebar-nav-link-padding-x, 2);
           margin-bottom: -$sidebar-nav-link-padding-y;
           margin-left: -$sidebar-nav-link-padding-x;
           line-height: 45px;

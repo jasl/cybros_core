@@ -3,9 +3,9 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby ">= 2.6"
+ruby ">= 2.7"
 
-gem "rails", "~> 6.1.3"
+gem "rails", "~> 6.1.4"
 gem "rails-i18n"
 
 # Use postgresql as the database for Active Record
@@ -29,7 +29,7 @@ gem "jbuilder"
 # gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem "bootsnap", ">= 1.4.4", require: false
+gem "bootsnap", ">= 1.9.3", require: false
 
 gem "config"
 

@@ -15,7 +15,7 @@ import JQuery from 'jquery';
 window.$ = window.JQuery = JQuery;
 
 import "bootstrap";
-import "@coreui/coreui"
+import "@mixtint/coreui"
 
 import "stylesheets/application"
 
