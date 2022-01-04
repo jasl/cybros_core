@@ -34,5 +34,10 @@
   },
   "resolutions": {
     "chokidar": "^3.5.2"
+  },
+  "babel": {
+    "presets": [
+      "./node_modules/@rails/webpacker/package/babel/preset.js"
+    ]
   }
 }
