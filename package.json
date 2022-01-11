@@ -22,6 +22,8 @@
     "popper.js": "^1.16.1",
     "postinstall-postinstall": "^2.1.0",
     "regenerator-runtime": "^0.13.9",
+    "sass": "^1.47.0",
+    "sass-loader": "^12.4.0",
     "stimulus": "^2.0.0",
     "turbolinks": "^5.2.0",
     "webpack": "^5.65.0",

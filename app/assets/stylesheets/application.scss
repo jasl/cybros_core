@@ -1,6 +1,6 @@
-@import "variables";
+@import "variables.scss";
 @import "~@mixtint/coreui/scss/coreui";
-@import "custom";
+@import "custom.scss";
 
 $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
