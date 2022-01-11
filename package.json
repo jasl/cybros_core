@@ -39,5 +39,8 @@
     "presets": [
       "./node_modules/@rails/webpacker/package/babel/preset.js"
     ]
-  }
+  },
+  "browserslist": [
+    "defaults"
+  ]
 }
