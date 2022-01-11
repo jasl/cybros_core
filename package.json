@@ -16,7 +16,10 @@
     "@stimulus/polyfills": "^2.0.0",
     "bootstrap": "^4.6.1",
     "core-js": "^3.19.3",
+    "css-loader": "^6.5.1",
+    "css-minimizer-webpack-plugin": "^3.3.1",
     "jquery": "^3.6.0",
+    "mini-css-extract-plugin": "^2.4.6",
     "patch-package": "^6.4.7",
     "perfect-scrollbar": "^1.5.3",
     "popper.js": "^1.16.1",
@@ -25,6 +28,7 @@
     "sass": "^1.47.0",
     "sass-loader": "^12.4.0",
     "stimulus": "^2.0.0",
+    "style-loader": "^3.3.1",
     "turbolinks": "^5.2.0",
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1"
