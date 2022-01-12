@@ -17,8 +17,6 @@ window.$ = window.JQuery = JQuery;
 import "bootstrap";
 import "@mixtint/coreui"
 
-import "stylesheets/application"
-
 require("@rails/ujs").start()
 require("turbolinks").start()
 //require("@rails/activestorage").start()
@@ -26,3 +24,4 @@ require("channels")
 
 import "turbolinks/coreui";
 import "controllers";
+import "stylesheets/application.scss"

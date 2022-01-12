@@ -14,7 +14,7 @@ gem "pg"
 # Use Puma as the app server
 gem "puma"
 # Use development version of Webpacker
-gem "webpacker"
+gem "webpacker", '~> 6.0.0.rc.6'
 
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem "turbolinks", "~> 5"
