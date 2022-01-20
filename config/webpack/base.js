@@ -1,3 +1,3 @@
-const { webpackConfig } = require('@rails/webpacker')
+const { webpackConfig } = require('shakapacker')
 
 module.exports = webpackConfig
