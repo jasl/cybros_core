@@ -14,7 +14,6 @@ require "action_mailer/railtie"
 # require "action_text/engine"
 require "action_view/railtie"
 require "action_cable/engine"
-# require "sprockets/railtie"
 require "rails/test_unit/railtie"
 
 # Require the gems listed in Gemfile, including any gems
@@ -28,6 +27,8 @@ end
 
 module CybrosCore
   class Application < Rails::Application
+    # Configuration for the application, engines, and railties goes here.
+    #
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
@@ -95,7 +96,11 @@ module CybrosCore
     #   config.action_mailer.default_url_options = Settings.url_options.to_h
     # end
 
+    # These settings can be overridden in specific environments using the files
+    # in config/environments, which are processed later.
+    #
     # config.time_zone = "Asia/Shanghai"
     # config.i18n.default_locale = "zh-CN"
+    # config.eager_load_paths << Rails.root.join("extras")
   end
 end
